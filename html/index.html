@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <ul data-bind="foreach: venues">
+    <li data-bind="text: name"></li>
+  </ul>
+
+  <ul data-bind="foreach: categories">
+    <li data-bind="text: pluralName"></li>
+  </ul>
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('app/main.js')
+  </script>
+</body>
+</html>

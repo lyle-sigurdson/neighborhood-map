@@ -1,0 +1,1486 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "5600b1fe498e6840f866955f"
+    },
+    "response": {
+        "confident": false,
+        "venues": [
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d16c941735",
+                        "name": "Burger Joint",
+                        "pluralName": "Burger Joints",
+                        "primary": true,
+                        "shortName": "Burgers"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 943-2655",
+                    "phone": "2049432655"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b8b0f5af964a520ca9032e3",
+                "location": {
+                    "address": "170 Main St",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "btw York Ave & Broadway",
+                    "distance": 86,
+                    "formattedAddress": [
+                        "170 Main St (btw York Ave & Broadway)",
+                        "Winnipeg MB R3C 1A6",
+                        "Canada"
+                    ],
+                    "lat": 49.88956111352463,
+                    "lng": -97.1357274055481,
+                    "postalCode": "R3C 1A6",
+                    "state": "MB"
+                },
+                "name": "V.J.'s Drive Inn",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 406,
+                    "tipCount": 10,
+                    "usersCount": 194
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/hotel_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1fa931735",
+                        "name": "Hotel",
+                        "pluralName": "Hotels",
+                        "primary": true,
+                        "shortName": "Hotel"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 942-8251",
+                    "phone": "2049428251",
+                    "twitter": "fortgarryhotel"
+                },
+                "hasMenu": true,
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b550039f964a52049d727e3",
+                "location": {
+                    "address": "222 Broadway",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "btw Fort & Garry",
+                    "distance": 108,
+                    "formattedAddress": [
+                        "222 Broadway (btw Fort & Garry)",
+                        "Winnipeg MB R3C 0R3",
+                        "Canada"
+                    ],
+                    "lat": 49.88801321890583,
+                    "lng": -97.13690592466293,
+                    "postalCode": "R3C 0R3",
+                    "state": "MB"
+                },
+                "menu": {
+                    "anchor": "View Prices",
+                    "label": "Prices",
+                    "mobileUrl": "https://foursquare.com/v/4b550039f964a52049d727e3/device_menu",
+                    "type": "Prices",
+                    "url": "https://foursquare.com/v/fort-garry-hotel/4b550039f964a52049d727e3/menu"
+                },
+                "name": "Fort Garry Hotel",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 2399,
+                    "tipCount": 25,
+                    "usersCount": 878
+                },
+                "url": "http://www.fortgarryhotel.com",
+                "verified": true
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/trainstation_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d129951735",
+                        "name": "Train Station",
+                        "pluralName": "Train Stations",
+                        "primary": true,
+                        "shortName": "Train Station"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 984-2457",
+                    "phone": "2049842457"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b60dea4f964a520c3fe29e3",
+                "location": {
+                    "address": "123 Main St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "at Broadway",
+                    "distance": 135,
+                    "formattedAddress": [
+                        "123 Main St. (at Broadway)",
+                        "Winnipeg MB R3C 1A3",
+                        "Canada"
+                    ],
+                    "lat": 49.88981686394794,
+                    "lng": -97.13514536619186,
+                    "postalCode": "R3C 1A3",
+                    "state": "MB"
+                },
+                "name": "Union Station",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1957,
+                    "tipCount": 4,
+                    "usersCount": 474
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/busstation_",
+                            "suffix": ".png"
+                        },
+                        "id": "52f2ab2ebcbc57f1066b8b4f",
+                        "name": "Bus Stop",
+                        "pluralName": "Bus Stops",
+                        "primary": true,
+                        "shortName": "Bus Stop"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4d51adc53626a09388c926bd",
+                "location": {
+                    "address": "160-180 Main St",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "Broadway",
+                    "distance": 87,
+                    "formattedAddress": [
+                        "160-180 Main St (Broadway)",
+                        "Winnipeg MB R3C 3P1",
+                        "Canada"
+                    ],
+                    "lat": 49.889143762779085,
+                    "lng": -97.13528682140378,
+                    "postalCode": "R3C 3P1",
+                    "state": "MB"
+                },
+                "name": "Winnipeg Transit Bus Stop #10641",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 90,
+                    "tipCount": 1,
+                    "usersCount": 22
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d124941735",
+                        "name": "Office",
+                        "pluralName": "Offices",
+                        "primary": true,
+                        "shortName": "Office"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 985-3811",
+                    "phone": "2049853811",
+                    "twitter": "wawanesacanada"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c1671dedaf42d7f2b2b4466",
+                "location": {
+                    "address": "191 Broadway",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 9,
+                    "formattedAddress": [
+                        "191 Broadway",
+                        "Winnipeg MB R3C 3P1",
+                        "Canada"
+                    ],
+                    "lat": 49.88901567243343,
+                    "lng": -97.13639524761476,
+                    "postalCode": "R3C 3P1",
+                    "state": "MB"
+                },
+                "name": "Wawanesa Insurance",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 401,
+                    "tipCount": 0,
+                    "usersCount": 33
+                },
+                "url": "http://wawanesa.com",
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/salon_barber_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d110951735",
+                        "name": "Salon / Barbershop",
+                        "pluralName": "Salons / Barbershops",
+                        "primary": true,
+                        "shortName": "Salon / Barbershop"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 942-7387",
+                    "phone": "2049427387"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b991784f964a520b86035e3",
+                "location": {
+                    "address": "111 Fort St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "at Broadway",
+                    "distance": 12,
+                    "formattedAddress": [
+                        "111 Fort St. (at Broadway)",
+                        "Winnipeg MB R3C 1C9",
+                        "Canada"
+                    ],
+                    "lat": 49.88905645719169,
+                    "lng": -97.13640615985014,
+                    "postalCode": "R3C 1C9",
+                    "state": "MB"
+                },
+                "name": "Sets On Fort",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 49,
+                    "tipCount": 2,
+                    "usersCount": 19
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/donuts_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d148941735",
+                        "name": "Donut Shop",
+                        "pluralName": "Donut Shops",
+                        "primary": true,
+                        "shortName": "Donuts"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 947-3160",
+                    "phone": "2049473160"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b88a90df964a5204a0732e3",
+                "location": {
+                    "address": "250 York Ave.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 169,
+                    "formattedAddress": [
+                        "250 York Ave.",
+                        "Winnipeg MB R3C 0N7",
+                        "Canada"
+                    ],
+                    "lat": 49.88959366541576,
+                    "lng": -97.13861295740985,
+                    "postalCode": "R3C 0N7",
+                    "state": "MB"
+                },
+                "name": "Robin's Donuts",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1328,
+                    "tipCount": 8,
+                    "usersCount": 78
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/neighborhood_",
+                            "suffix": ".png"
+                        },
+                        "id": "4f2a25ac4b909258e854f55f",
+                        "name": "Neighborhood",
+                        "pluralName": "Neighborhoods",
+                        "primary": true,
+                        "shortName": "Neighborhood"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "5314b06fe4b0d805d372ef91",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 546,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.893586055539046,
+                    "lng": -97.13899370549719
+                },
+                "name": "Downtown Winnipeg",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 58,
+                    "tipCount": 0,
+                    "usersCount": 17
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/steakhouse_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1cc941735",
+                        "name": "Steakhouse",
+                        "pluralName": "Steakhouses",
+                        "primary": true,
+                        "shortName": "Steakhouse"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 942-7619",
+                    "phone": "2049427619"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b15de45f964a52036b523e3",
+                "location": {
+                    "address": "115 Garry St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 88,
+                    "formattedAddress": [
+                        "115 Garry St.",
+                        "Winnipeg MB R3C 1G5",
+                        "Canada"
+                    ],
+                    "lat": 49.88882,
+                    "lng": -97.137695,
+                    "postalCode": "R3C 1G5",
+                    "state": "MB"
+                },
+                "name": "Keg Steakhouse & Bar",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1072,
+                    "tipCount": 17,
+                    "usersCount": 541
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d16c941735",
+                        "name": "Burger Joint",
+                        "pluralName": "Burger Joints",
+                        "primary": true,
+                        "shortName": "Burgers"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 943-1072",
+                    "phone": "2049431072"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b900079f964a5205f6f33e3",
+                "location": {
+                    "address": "172 Main St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 98,
+                    "formattedAddress": [
+                        "172 Main St.",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.889616,
+                    "lng": -97.135574,
+                    "state": "MB"
+                },
+                "name": "Johnny G's",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 401,
+                    "tipCount": 7,
+                    "usersCount": 226
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d124941735",
+                        "name": "Office",
+                        "pluralName": "Offices",
+                        "primary": true,
+                        "shortName": "Office"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "517533f0e4b0936913c9601b",
+                "location": {
+                    "address": "117 Fort Street",
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 37,
+                    "formattedAddress": [
+                        "117 Fort Street",
+                        "Canada"
+                    ],
+                    "lat": 49.88928901673059,
+                    "lng": -97.13652772310726
+                },
+                "name": "Pollock & Wright Land Surveyors",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 35,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/salon_barber_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d110951735",
+                        "name": "Salon / Barbershop",
+                        "pluralName": "Salons / Barbershops",
+                        "primary": true,
+                        "shortName": "Salon / Barbershop"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "51a0c6c4498e9de80ef63485",
+                "location": {
+                    "address": "111 Fort Street",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 46,
+                    "formattedAddress": [
+                        "111 Fort Street",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.88937,
+                    "lng": -97.13646,
+                    "state": "MB"
+                },
+                "name": "Salon One Eleven",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 16,
+                    "tipCount": 1,
+                    "usersCount": 8
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/government_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d126941735",
+                        "name": "Government Building",
+                        "pluralName": "Government Buildings",
+                        "primary": true,
+                        "shortName": "Government"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "50118737e4b0adaeafcc0c1e",
+                "location": {
+                    "address": "201-114 Garry St",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 53,
+                    "formattedAddress": [
+                        "201-114 Garry St",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.8884837605618,
+                    "lng": -97.13629813409499,
+                    "state": "MB"
+                },
+                "name": "Child Abuse Registry Unit (Provincial Services)",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 3,
+                    "tipCount": 0,
+                    "usersCount": 3
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/busstation_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d12b951735",
+                        "name": "Bus Line",
+                        "pluralName": "Bus Lines",
+                        "primary": true,
+                        "shortName": "Bus"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "51eef26e498e5566f064af84",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 58,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.88844111142966,
+                    "lng": -97.13625607614594
+                },
+                "name": "10642",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 2,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/eventspace_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d171941735",
+                        "name": "Event Space",
+                        "pluralName": "Event Spaces",
+                        "primary": true,
+                        "shortName": "Event Space"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4ba3bc66f964a520cc5938e3",
+                "location": {
+                    "address": "194 Broadway",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 70,
+                    "formattedAddress": [
+                        "194 Broadway",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.88837665251709,
+                    "lng": -97.13606940223094,
+                    "state": "MB"
+                },
+                "name": "Manitoba Club",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 113,
+                    "tipCount": 2,
+                    "usersCount": 67
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/streetfood_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1cb941735",
+                        "name": "Food Truck",
+                        "pluralName": "Food Trucks",
+                        "primary": true,
+                        "shortName": "Food Truck"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c97532e034137044a738bef",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 68,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.888333,
+                    "lng": -97.136415
+                },
+                "name": "The Everything Wagon",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d124941735",
+                        "name": "Office",
+                        "pluralName": "Offices",
+                        "primary": true,
+                        "shortName": "Office"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4fa7e2e4e4b0e7038d0ac70e",
+                "location": {
+                    "address": "4 Fort St",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 69,
+                    "formattedAddress": [
+                        "4 Fort St",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.88834934667153,
+                    "lng": -97.13619529447442,
+                    "state": "MB"
+                },
+                "name": "Anxiety Disorders Association Of Manitoba",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 4,
+                    "tipCount": 0,
+                    "usersCount": 4
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d124941735",
+                        "name": "Office",
+                        "pluralName": "Offices",
+                        "primary": true,
+                        "shortName": "Office"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c657860c2ead13a00feb080",
+                "location": {
+                    "address": "4-65 Garry st",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 77,
+                    "formattedAddress": [
+                        "4-65 Garry st",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.88955,
+                    "lng": -97.137017,
+                    "state": "MB"
+                },
+                "name": "City of Winnipeg Property, Land, and Development",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 2,
+                    "tipCount": 0,
+                    "usersCount": 2
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/parking_",
+                            "suffix": ".png"
+                        },
+                        "id": "4c38df4de52ce0d596b336e1",
+                        "name": "Parking",
+                        "pluralName": "Parking",
+                        "primary": true,
+                        "shortName": "Parking"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c487af631e41b8df6315035",
+                "location": {
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 75,
+                    "formattedAddress": [
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.8895196403553,
+                    "lng": -97.13704705238342,
+                    "state": "MB"
+                },
+                "name": "The Zone",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 4,
+                    "tipCount": 1,
+                    "usersCount": 2
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d124941735",
+                        "name": "Office",
+                        "pluralName": "Offices",
+                        "primary": true,
+                        "shortName": "Office"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c11139881e976b0d62710eb",
+                "location": {
+                    "address": "4-65 Gary St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "At Assiniboine Ave.",
+                    "distance": 72,
+                    "formattedAddress": [
+                        "4-65 Gary St. (At Assiniboine Ave.)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.889507,
+                    "lng": -97.137004,
+                    "state": "MB"
+                },
+                "name": "WPG Planning and Property",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c191930838020a1e832e561",
+                "location": {
+                    "address": "205 fort st",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "St.mary",
+                    "distance": 72,
+                    "formattedAddress": [
+                        "205 fort st (St.mary)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.889507,
+                    "lng": -97.137004,
+                    "state": "MB"
+                },
+                "name": "Kellet copy",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d130941735",
+                        "name": "Building",
+                        "pluralName": "Buildings",
+                        "primary": true,
+                        "shortName": "Building"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4bf5958b4d5f20a111b697fe",
+                "location": {
+                    "address": "194 broadway",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "Main",
+                    "distance": 73,
+                    "formattedAddress": [
+                        "194 broadway (Main)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.889508,
+                    "lng": -97.137017,
+                    "state": "MB"
+                },
+                "name": "194 broadway",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c1275d077cea5931e15cd60",
+                "location": {
+                    "address": "165 garry st",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "Fort",
+                    "distance": 72,
+                    "formattedAddress": [
+                        "165 garry st (Fort)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.889507,
+                    "lng": -97.137004,
+                    "state": "MB"
+                },
+                "name": "Direct data",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4fb1d6e9f69016062032fc7e",
+                "location": {
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 94,
+                    "formattedAddress": [
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.8881369,
+                    "lng": -97.1368663,
+                    "state": "MB"
+                },
+                "name": "Fort Gary Hotel - Main Ballroom",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 48,
+                    "tipCount": 1,
+                    "usersCount": 32
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/busstation_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d12b951735",
+                        "name": "Bus Line",
+                        "pluralName": "Bus Lines",
+                        "primary": true,
+                        "shortName": "Bus"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "51ae659d498e6b197699c7cb",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 115,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.889966200616435,
+                    "lng": -97.1361385887342
+                },
+                "name": "Winnipeg Transit #10639",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 53,
+                    "tipCount": 0,
+                    "usersCount": 2
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/airport_rentalcar_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1ef941735",
+                        "name": "Rental Car Location",
+                        "pluralName": "Rental Car Locations",
+                        "primary": true,
+                        "shortName": "Rental Car"
+                    }
+                ],
+                "contact": {
+                    "facebook": "136437939713731",
+                    "facebookName": "Avis Car Rental",
+                    "facebookUsername": "avis",
+                    "formattedPhone": "(204) 989-7521",
+                    "phone": "2049897521",
+                    "twitter": "avis"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4f513309e4b03be3618ff081",
+                "location": {
+                    "address": "234 York Avenue",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 123,
+                    "formattedAddress": [
+                        "234 York Avenue",
+                        "Winnipeg MB R3C 0N5",
+                        "Canada"
+                    ],
+                    "lat": 49.88988913,
+                    "lng": -97.13739339,
+                    "postalCode": "R3C 0N5",
+                    "state": "MB"
+                },
+                "name": "Avis Car Rental",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 8,
+                    "tipCount": 17,
+                    "usersCount": 4
+                },
+                "storeId": "44721",
+                "url": "http://locations.avis.com/us/ca/los-angeles/lax.html",
+                "verified": true
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d124941735",
+                        "name": "Office",
+                        "pluralName": "Offices",
+                        "primary": true,
+                        "shortName": "Office"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4bab6fe0f964a52073a93ae3",
+                "location": {
+                    "address": "125 Garry Street",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 133,
+                    "formattedAddress": [
+                        "125 Garry Street",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.8896833416283,
+                    "lng": -97.13795383405376,
+                    "state": "MB"
+                },
+                "name": "Ceridian",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 280,
+                    "tipCount": 1,
+                    "usersCount": 18
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/government_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d126941735",
+                        "name": "Government Building",
+                        "pluralName": "Government Buildings",
+                        "primary": true,
+                        "shortName": "Government"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4fda29b7e4b013d81a7f3638",
+                "location": {
+                    "address": "102-114 garry street",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 137,
+                    "formattedAddress": [
+                        "102-114 garry street",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.88790269428305,
+                    "lng": -97.13748675243437,
+                    "state": "MB"
+                },
+                "name": "Manitoba Child Care",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 3,
+                    "tipCount": 0,
+                    "usersCount": 3
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/deli_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1c5941735",
+                        "name": "Sandwich Place",
+                        "pluralName": "Sandwich Places",
+                        "primary": true,
+                        "shortName": "Sandwiches"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "53f4d468498eacab76906dc2",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 117,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.88997268676758,
+                    "lng": -97.13605499267578
+                },
+                "name": "Food For Thought",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 1,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/breakfast_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d143941735",
+                        "name": "Breakfast Spot",
+                        "pluralName": "Breakfast Spots",
+                        "primary": true,
+                        "shortName": "Breakfast"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c977b9a72dd224b2fe1b491",
+                "location": {
+                    "address": "125 Garry Street #110",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 133,
+                    "formattedAddress": [
+                        "125 Garry Street #110",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.889578,
+                    "lng": -97.138057,
+                    "state": "MB"
+                },
+                "name": "Jackpot Cafe",
+                "referralId": "v-1442886142",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 142,
+                    "tipCount": 1,
+                    "usersCount": 15
+                },
+                "verified": false
+            }
+        ]
+    }
+}
