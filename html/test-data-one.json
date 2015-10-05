@@ -1,0 +1,1513 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "55fc6a41498e7e9b76a6bc45"
+    },
+    "response": {
+        "confident": false,
+        "venues": [
+
+
+
+
+
+ {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d16d941735",
+                        "name": "Caf\u00e9",
+                        "pluralName": "Caf\u00e9s",
+                        "primary": true,
+                        "shortName": "Caf\u00e9"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "LYLE54e8a5d4498e9af95a77667c",
+                "location": {
+                    "address": "188 Isabel St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "@ Ross Ave.",
+                    "distance": 10,
+                    "formattedAddress": [
+                        "188 Isabel St. (@ Ross Ave.)",
+                        "Winnipeg MB R3A 1G7",
+                        "Canada"
+                    ],
+                    "lat": 49.90376675377946,
+                    "lng": -97.14903832757595,
+                    "postalCode": "R3A 1G7",
+                    "state": "MB"
+                },
+                "name": "NEW THING",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 8,
+                    "tipCount": 0,
+                    "usersCount": 8
+                },
+                "verified": false
+            },
+
+
+
+
+
+
+
+
+
+
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d16d941735",
+                        "name": "Caf\u00e9",
+                        "pluralName": "Caf\u00e9s",
+                        "primary": true,
+                        "shortName": "Caf\u00e9"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "54e8a5d4498e9af95a77667c",
+                "location": {
+                    "address": "188 Isabel St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "@ Ross Ave.",
+                    "distance": 10,
+                    "formattedAddress": [
+                        "188 Isabel St. (@ Ross Ave.)",
+                        "Winnipeg MB R3A 1G7",
+                        "Canada"
+                    ],
+                    "lat": 49.90376675377946,
+                    "lng": -97.14903832757595,
+                    "postalCode": "R3A 1G7",
+                    "state": "MB"
+                },
+                "name": "Tim Hortons",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 8,
+                    "tipCount": 0,
+                    "usersCount": 8
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/japanese_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d111941735",
+                        "name": "Japanese Restaurant",
+                        "pluralName": "Japanese Restaurants",
+                        "primary": true,
+                        "shortName": "Japanese"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 504-8999",
+                    "phone": "2045048999"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "51b25b66498ebc87b234ec4f",
+                "location": {
+                    "address": "185 Isabel St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 67,
+                    "formattedAddress": [
+                        "185 Isabel St.",
+                        "Winnipeg MB R3A 1G8",
+                        "Canada"
+                    ],
+                    "lat": 49.903426,
+                    "lng": -97.148165,
+                    "postalCode": "R3A 1G8",
+                    "state": "MB"
+                },
+                "name": "Kyu Bistro",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 82,
+                    "tipCount": 1,
+                    "usersCount": 44
+                },
+                "url": "http://www.kyubistro.com",
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/medical_doctorsoffice_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d177941735",
+                        "name": "Doctor's Office",
+                        "pluralName": "Doctor's Offices",
+                        "primary": true,
+                        "shortName": "Doctor's Office"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4ffb4ad2e4b08049d95fc755",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 51,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.90422,
+                    "lng": -97.14861
+                },
+                "name": "Dr Charles Lam",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d16a941735",
+                        "name": "Bakery",
+                        "pluralName": "Bakeries",
+                        "primary": true,
+                        "shortName": "Bakery"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4f232b24e4b0617642ff6a2e",
+                "location": {
+                    "address": "191 Isabel Street",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 55,
+                    "formattedAddress": [
+                        "191 Isabel Street",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.90360366617572,
+                    "lng": -97.14818934955487,
+                    "state": "MB"
+                },
+                "name": "Jejomar Bake Shop",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 8,
+                    "tipCount": 1,
+                    "usersCount": 7
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/busstation_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d12b951735",
+                        "name": "Bus Line",
+                        "pluralName": "Bus Lines",
+                        "primary": true,
+                        "shortName": "Bus"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "5175666ce4b00ac50eeebe04",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 65,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.90324,
+                    "lng": -97.148615
+                },
+                "name": "Winnipeg Transit Bus 38",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/korean_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d113941735",
+                        "name": "Korean Restaurant",
+                        "pluralName": "Korean Restaurants",
+                        "primary": true,
+                        "shortName": "Korean"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b81db75f964a52075c130e3",
+                "location": {
+                    "address": "193 Isabel St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 69,
+                    "formattedAddress": [
+                        "193 Isabel St.",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.90359986519824,
+                    "lng": -97.14798915662222,
+                    "state": "MB"
+                },
+                "name": "Kim Baek Korean Restaurant",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 200,
+                    "tipCount": 7,
+                    "usersCount": 76
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/automotive_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d124951735",
+                        "name": "Automotive Shop",
+                        "pluralName": "Automotive Shops",
+                        "primary": true,
+                        "shortName": "Automotive"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4bd20f0977b29c7450e38d82",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 81,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.903160469715154,
+                    "lng": -97.1483383916201
+                },
+                "name": "Rondex",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 5,
+                    "tipCount": 0,
+                    "usersCount": 5
+                },
+                "verified": false
+            },
+            {
+                "categories": [],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c4f494f24edc9b6093571bb",
+                "location": {
+                    "address": "505 ross ave",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "Isabel st",
+                    "distance": 85,
+                    "formattedAddress": [
+                        "505 ross ave (Isabel st)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.90455170817849,
+                    "lng": -97.14867912679394,
+                    "state": "MB"
+                },
+                "name": "Freight House Early Learning and Care Inc.",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 27,
+                    "tipCount": 0,
+                    "usersCount": 7
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/busstation_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1fe931735",
+                        "name": "Bus Station",
+                        "pluralName": "Bus Stations",
+                        "primary": true,
+                        "shortName": "Bus Station"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "50901143e4b0b197b9a81e8d",
+                "location": {
+                    "address": "Isabel Street",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "William Avenue",
+                    "distance": 144,
+                    "formattedAddress": [
+                        "Isabel Street (William Avenue)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.90256881713867,
+                    "lng": -97.14954376220703,
+                    "state": "MB"
+                },
+                "name": "Winnipeg Transit Stop #10755",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                            "suffix": ".png"
+                        },
+                        "id": "52af3b773cf9994f4e043c03",
+                        "name": "Szechuan Restaurant",
+                        "pluralName": "Szechuan Restaurants",
+                        "primary": true,
+                        "shortName": "Szechuan"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "53d824fc498ee2ecd7f137dc",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 114,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.902788,
+                    "lng": -97.149163
+                },
+                "name": "winnipeg flying noodle house",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 2,
+                    "tipCount": 0,
+                    "usersCount": 2
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/factory_",
+                            "suffix": ".png"
+                        },
+                        "id": "4eb1bea83b7b6f98df247e06",
+                        "name": "Factory",
+                        "pluralName": "Factories",
+                        "primary": true,
+                        "shortName": "Factory"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4eca5b05be7ba4fc71c197fa",
+                "location": {
+                    "address": "125 Adelaide",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "William",
+                    "distance": 673,
+                    "formattedAddress": [
+                        "125 Adelaide (William)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.89953146515529,
+                    "lng": -97.14223889143959,
+                    "state": "MB"
+                },
+                "name": "Assentworks",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 19,
+                    "tipCount": 1,
+                    "usersCount": 10
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1e0931735",
+                        "name": "Coffee Shop",
+                        "pluralName": "Coffee Shops",
+                        "primary": true,
+                        "shortName": "Coffee Shop"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "513b7dd6e4b0e75b720eed5f",
+                "location": {
+                    "address": "720 William Ave",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 579,
+                    "formattedAddress": [
+                        "720 William Ave",
+                        "Winnipeg MB R3E 1J7",
+                        "Canada"
+                    ],
+                    "lat": 49.90341962509418,
+                    "lng": -97.156957116355,
+                    "postalCode": "R3E 1J7",
+                    "state": "MB"
+                },
+                "name": "Starbucks",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 522,
+                    "tipCount": 2,
+                    "usersCount": 12
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/flowershop_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d11b951735",
+                        "name": "Flower Shop",
+                        "pluralName": "Flower Shops",
+                        "primary": true,
+                        "shortName": "Flower Shop"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "5026b810f2e7120aa866aac3",
+                "location": {
+                    "address": "833 Sherbrook St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 508,
+                    "formattedAddress": [
+                        "833 Sherbrook St.",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.90352172163789,
+                    "lng": -97.15598344802856,
+                    "state": "MB"
+                },
+                "name": "A Flower Affair",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/design_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1f4941735",
+                        "name": "Design Studio",
+                        "pluralName": "Design Studios",
+                        "primary": true,
+                        "shortName": "Design"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4dbaccad0cb65435c5347138",
+                "location": {
+                    "address": "310 Ross ave",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "Princess street",
+                    "distance": 227,
+                    "formattedAddress": [
+                        "310 Ross ave (Princess street)",
+                        "Winnipeg MB R3A",
+                        "Canada"
+                    ],
+                    "lat": 49.904811,
+                    "lng": -97.146149,
+                    "postalCode": "R3A",
+                    "state": "MB"
+                },
+                "name": "Gerb Enterprises of Canada",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d142941735",
+                        "name": "Asian Restaurant",
+                        "pluralName": "Asian Restaurants",
+                        "primary": true,
+                        "shortName": "Asian"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4e4d250d6284776ee12b0d56",
+                "location": {
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 549,
+                    "formattedAddress": [
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.89944859139839,
+                    "lng": -97.15250749499404,
+                    "state": "MB"
+                },
+                "name": "Juvian's Filipino Breakfast",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 4,
+                    "tipCount": 0,
+                    "usersCount": 3
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/breakfast_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d143941735",
+                        "name": "Breakfast Spot",
+                        "pluralName": "Breakfast Spots",
+                        "primary": true,
+                        "shortName": "Breakfast"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4ead8ef70aaf9e9a242c8dda",
+                "location": {
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 650,
+                    "formattedAddress": [
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.9086306454242,
+                    "lng": -97.15400176846867,
+                    "state": "MB"
+                },
+                "name": "Sunrise Restaurant",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 16,
+                    "tipCount": 0,
+                    "usersCount": 5
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/asian_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d142941735",
+                        "name": "Asian Restaurant",
+                        "pluralName": "Asian Restaurants",
+                        "primary": true,
+                        "shortName": "Asian"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c28dee4ce3fc9282bd96d88",
+                "location": {
+                    "address": "99 Isabel Street",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 330,
+                    "formattedAddress": [
+                        "99 Isabel Street",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.900934,
+                    "lng": -97.150092,
+                    "state": "MB"
+                },
+                "name": "La Merage",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 121,
+                    "tipCount": 1,
+                    "usersCount": 40
+                },
+                "verified": false
+            },
+            {
+                "categories": [],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4c4f4d6792b6a593d29f5871",
+                "location": {
+                    "address": "700 elgin",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "Sherbrook",
+                    "distance": 633,
+                    "formattedAddress": [
+                        "700 elgin (Sherbrook)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.905424,
+                    "lng": -97.157362,
+                    "state": "MB"
+                },
+                "name": "Child Guidance Clinic",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 126,
+                    "tipCount": 0,
+                    "usersCount": 8
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/factory_",
+                            "suffix": ".png"
+                        },
+                        "id": "4eb1bea83b7b6f98df247e06",
+                        "name": "Factory",
+                        "pluralName": "Factories",
+                        "primary": true,
+                        "shortName": "Factory"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "52264f2b11d2668a0c926504",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 534,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.899658,
+                    "lng": -97.145141
+                },
+                "name": "Canada Goose",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4e22e46bb0fbdf9ba7b86e24",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 606,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.90849435971182,
+                    "lng": -97.15319504333331
+                },
+                "name": "Peanut Park",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 11,
+                    "tipCount": 0,
+                    "usersCount": 6
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/conveniencestore_",
+                            "suffix": ".png"
+                        },
+                        "id": "4d954b0ea243a5684a65b473",
+                        "name": "Convenience Store",
+                        "pluralName": "Convenience Stores",
+                        "primary": true,
+                        "shortName": "Convenience Stores"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "53cf097d498e49734a82f9e9",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 396,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.90169143676758,
+                    "lng": -97.14444732666016
+                },
+                "name": "Ellen Foods",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/furniture_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1f8941735",
+                        "name": "Furniture / Home Store",
+                        "pluralName": "Furniture / Home Stores",
+                        "primary": true,
+                        "shortName": "Furniture / Home"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 943-5263",
+                    "phone": "2049435263"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "51ddb254498e84e6cdb647f8",
+                "location": {
+                    "address": "318 Logan Ave",
+                    "cc": "CA",
+                    "city": "Winn",
+                    "country": "Canada",
+                    "crossStreet": "Stanley",
+                    "distance": 618,
+                    "formattedAddress": [
+                        "318 Logan Ave (Stanley)",
+                        "Winn MB R3A QP5",
+                        "Canada"
+                    ],
+                    "lat": 49.90298868572558,
+                    "lng": -97.14037216539172,
+                    "postalCode": "R3A QP5",
+                    "state": "MB"
+                },
+                "name": "flame and comfort",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 2,
+                    "tipCount": 1,
+                    "usersCount": 2
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/hardware_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d112951735",
+                        "name": "Hardware Store",
+                        "pluralName": "Hardware Stores",
+                        "primary": true,
+                        "shortName": "Hardware"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4da9e9d20437dccbd7f87a2f",
+                "location": {
+                    "address": "521 Hargrave Street",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 599,
+                    "formattedAddress": [
+                        "521 Hargrave Street",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.899722043663246,
+                    "lng": -97.14343981244983,
+                    "state": "MB"
+                },
+                "name": "Western Paint",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 5,
+                    "tipCount": 0,
+                    "usersCount": 5
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/default_",
+                            "suffix": ".png"
+                        },
+                        "id": "52e81612bcbc57f1066b7a36",
+                        "name": "Warehouse",
+                        "pluralName": "Warehouses",
+                        "primary": true,
+                        "shortName": "Warehouse"
+                    }
+                ],
+                "contact": {
+                    "formattedPhone": "(204) 987-2466",
+                    "phone": "2049872466"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "5478be96498e004e1f027eaa",
+                "location": {
+                    "address": "47 Lydia St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 533,
+                    "formattedAddress": [
+                        "47 Lydia St.",
+                        "Winnipeg MB R3A 1K7",
+                        "Canada"
+                    ],
+                    "lat": 49.90093032989714,
+                    "lng": -97.15485692024231,
+                    "postalCode": "R3A 1K7",
+                    "state": "MB"
+                },
+                "name": "Auto-Camping",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/travel/busstation_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d1fe931735",
+                        "name": "Bus Station",
+                        "pluralName": "Bus Stations",
+                        "primary": true,
+                        "shortName": "Bus Station"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "51365d26e4b09490b86bb8c7",
+                "location": {
+                    "address": "Sherbrook Street",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "William Avenue",
+                    "distance": 456,
+                    "formattedAddress": [
+                        "Sherbrook Street (William Avenue)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.90101210554385,
+                    "lng": -97.15356507052954,
+                    "state": "MB"
+                },
+                "name": "Winnipeg Transit Stop #10444",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/building/school_",
+                            "suffix": ".png"
+                        },
+                        "id": "4f4533804b9074f6e4fb0105",
+                        "name": "Elementary School",
+                        "pluralName": "Elementary Schools",
+                        "primary": true,
+                        "shortName": "Elementary School"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4f45880ce4b0288c750055a2",
+                "location": {
+                    "address": "Isabel",
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 238,
+                    "formattedAddress": [
+                        "Isabel",
+                        "Canada"
+                    ],
+                    "lat": 49.90591154845895,
+                    "lng": -97.14946990136265
+                },
+                "name": "Dufferine School",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 2,
+                    "tipCount": 0,
+                    "usersCount": 2
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/apparel_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d103951735",
+                        "name": "Clothing Store",
+                        "pluralName": "Clothing Stores",
+                        "primary": true,
+                        "shortName": "Apparel"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4f39512be4b0f4cfe08a8528",
+                "location": {
+                    "address": "312 Ross Avenue",
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 619,
+                    "formattedAddress": [
+                        "312 Ross Avenue",
+                        "Canada"
+                    ],
+                    "lat": 49.901576,
+                    "lng": -97.14098
+                },
+                "name": "Bill Worb Furs",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 1,
+                    "tipCount": 0,
+                    "usersCount": 1
+                },
+                "verified": false
+            },
+            {
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/parks_outdoors/neighborhood_",
+                            "suffix": ".png"
+                        },
+                        "id": "4f2a25ac4b909258e854f55f",
+                        "name": "Neighborhood",
+                        "pluralName": "Neighborhoods",
+                        "primary": true,
+                        "shortName": "Neighborhood"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "53150ddae4b0e72a36ebb888",
+                "location": {
+                    "cc": "CA",
+                    "country": "Canada",
+                    "distance": 193,
+                    "formattedAddress": [
+                        "Canada"
+                    ],
+                    "lat": 49.904334,
+                    "lng": -97.146328
+                },
+                "name": "Centennial",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 7,
+                    "tipCount": 0,
+                    "usersCount": 3
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/filipino_",
+                            "suffix": ".png"
+                        },
+                        "id": "4eb1bd1c3b7b55596b4a748f",
+                        "name": "Filipino Restaurant",
+                        "pluralName": "Filipino Restaurants",
+                        "primary": true,
+                        "shortName": "Filipino"
+                    }
+                ],
+                "contact": {
+                    "facebook": "159590440859627",
+                    "facebookName": "Pampanga Restaurant & Banquet Hall",
+                    "facebookUsername": "PampangaRestaurant",
+                    "formattedPhone": "(204) 947-3148",
+                    "phone": "2049473148"
+                },
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b64b611f964a5204aca2ae3",
+                "location": {
+                    "address": "349 Henry Ave.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "distance": 658,
+                    "formattedAddress": [
+                        "349 Henry Ave.",
+                        "Winnipeg MB R3A 0S9",
+                        "Canada"
+                    ],
+                    "lat": 49.905133763569786,
+                    "lng": -97.13994585345633,
+                    "postalCode": "R3A 0S9",
+                    "state": "MB"
+                },
+                "name": "Pampanga Restaurant",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 211,
+                    "tipCount": 2,
+                    "usersCount": 113
+                },
+                "verified": false
+            },
+            {
+                "allowMenuUrlEdit": true,
+                "categories": [
+                    {
+                        "icon": {
+                            "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/sportsbar_",
+                            "suffix": ".png"
+                        },
+                        "id": "4bf58dd8d48988d11d941735",
+                        "name": "Sports Bar",
+                        "pluralName": "Sports Bars",
+                        "primary": true,
+                        "shortName": "Sports Bar"
+                    }
+                ],
+                "contact": {},
+                "hereNow": {
+                    "count": 0,
+                    "groups": [],
+                    "summary": "Nobody here"
+                },
+                "id": "4b940c41f964a520036434e3",
+                "location": {
+                    "address": "940 Sherbrook St.",
+                    "cc": "CA",
+                    "city": "Winnipeg",
+                    "country": "Canada",
+                    "crossStreet": "At Pacific Ave.",
+                    "distance": 477,
+                    "formattedAddress": [
+                        "940 Sherbrook St. (At Pacific Ave.)",
+                        "Winnipeg MB",
+                        "Canada"
+                    ],
+                    "lat": 49.906946,
+                    "lng": -97.153428,
+                    "state": "MB"
+                },
+                "name": "Casa Benfica",
+                "referralId": "v-1442605633",
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "stats": {
+                    "checkinsCount": 3,
+                    "tipCount": 0,
+                    "usersCount": 2
+                },
+                "verified": false
+            }
+        ]
+    }
+}

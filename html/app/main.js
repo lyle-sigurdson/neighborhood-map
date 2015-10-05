@@ -1,4 +1,4 @@
-/*global console */
+/*jshint browser: true, devel: true */
 import xr from 'radiosilence/xr';
 import ko from 'knockout';
 import koMapping from 'SteveSanderson/knockout.mapping';
@@ -24,7 +24,6 @@ import koMapping from 'SteveSanderson/knockout.mapping';
     }
 
     let mapping = {
-        ignore: [ 'confident' ],
         venues: {
             key: data => ko.utils.unwrapObservable(data.id),
             create: options => new Venue(options.data)
@@ -35,28 +34,46 @@ import koMapping from 'SteveSanderson/knockout.mapping';
         }
     };
 
+    let getCategories = (venues) => {
+        let categories = new Map(),
+            result = [];
+
+        venues.forEach(venue =>
+            venue.categories.forEach(category =>
+                categories.set(category.id, category)
+            )
+        );
+
+        categories.forEach((value) =>
+            result.push(value)
+        );
+
+        return result;
+    };
+
     xr.get('test-data.json')
         .then(function (result) {
-            let categories = new Map();
+            let data = {
+                venues: result.response.venues,
+                categories: getCategories(result.response.venues)
+            };
 
-            result.response.venues.forEach(venue =>
-                venue.categories.forEach(category =>
-                    categories.set(category.id, category)
-                )
-            );
-
-            result.response.categories = [];
-
-            categories.forEach((value) =>
-                result.response.categories.push(value)
-            );
-
-            let viewModel = koMapping.fromJS(result.response, mapping);
+            let viewModel = koMapping.fromJS(data, mapping);
 
             ko.applyBindings(viewModel);
 
-            console.log(viewModel);
-
+            [ 'test-data-one.json', '123-main.json', 'test-data.json' ].forEach((file, index) => {
+                setTimeout(() => {
+                    console.log(index);
+                    xr.get(file).then(result => {
+                        let data = {
+                            venues: result.response.venues,
+                            categories: getCategories(result.response.venues)
+                        };
+                        koMapping.fromJS(data, viewModel);
+                    });
+                }, (index + 1) * 5000);
+            });
         })
         .catch(function (err) {
             console.log('err ', err);
