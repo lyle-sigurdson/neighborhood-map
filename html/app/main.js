@@ -7,14 +7,15 @@ import koMapping from 'SteveSanderson/knockout.mapping';
     'use strict';
 
     let getCategories = (venues) => {
-        let categories = new Map(),
-            result = [];
+        let categories = new Map();
 
         venues.forEach(venue =>
             venue.categories.forEach(category =>
                 categories.set(category.id, category)
             )
         );
+
+        let result = [];
 
         categories.forEach((value) =>
             result.push(value)
@@ -74,10 +75,12 @@ import koMapping from 'SteveSanderson/knockout.mapping';
 
     xr.get('test-data.json')
         .then(function (result) {
+            // Init the app.
             viewModel.init(result.response);
 
             ko.applyBindings(viewModel);
 
+            // Apply updates as necessary.
             [ 'test-data-one.json', '123-main.json', 'test-data.json' ].forEach((file, index) => {
                 setTimeout(() => {
                     xr.get(file).then(data => {
