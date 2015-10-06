@@ -3,6 +3,9 @@ import xr from 'radiosilence/xr';
 import ko from 'knockout';
 import koMapping from 'SteveSanderson/knockout.mapping';
 
+import Component01 from 'app/component-01/main';
+import Component02 from 'app/component-02/main';
+
 (function () {
     'use strict';
 
@@ -72,6 +75,8 @@ import koMapping from 'SteveSanderson/knockout.mapping';
 
     // Main
     let viewModel = new ViewModel();
+    let component01 = new Component01(viewModel);
+    let component02 = new Component02(viewModel);
 
     xr.get('test-data.json')
         .then(function (result) {
