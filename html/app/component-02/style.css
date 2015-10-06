@@ -1,5 +1,10 @@
 .component-02 {
+    height: 100%;
     color: red;
+}
+
+#component-02--map {
+    height: 100%;
 }
 
 .component-02--title {
