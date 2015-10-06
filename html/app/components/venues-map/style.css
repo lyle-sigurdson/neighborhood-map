@@ -1,12 +1,12 @@
-.component-02 {
+.venues-map {
     height: 100%;
     color: red;
 }
 
-#component-02--map {
+#venues-map--map {
     height: 100%;
 }
 
-.component-02--title {
+.venues-map--title {
     color: green;
 }

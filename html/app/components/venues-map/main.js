@@ -7,13 +7,13 @@ import config from 'app/app-config.json!';
 
 export default class {
     constructor(viewModel) {
-        ko.components.register('component-02', {
+        ko.components.register('venues-map', {
             viewModel: { instance: viewModel },
             template: template
         });
 
         mapsapi(config.googleApiKey)().then(maps => {
-            let map = new maps.Map(document.getElementById('component-02--map'), {
+            let map = new maps.Map(document.getElementById('venues-map--map'), {
                 center: { lat: -34.39, lng: 150.644 },
                 zoom: 8
             });
