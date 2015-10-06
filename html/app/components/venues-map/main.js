@@ -2,7 +2,7 @@
 import ko from 'knockout';
 import template from './template.html!text';
 import {} from './style.css!';
-import mapsapi from 'google-maps-api';
+import mapsApi from 'google-maps-api';
 import config from 'app/app-config.json!';
 
 export default class {
@@ -12,7 +12,7 @@ export default class {
             template: template
         });
 
-        mapsapi(config.googleApiKey)().then(maps => {
+        mapsApi(config.googleApiKey)().then(maps => {
             let map = new maps.Map(document.getElementById('venues-map--map'), {
                 center: { lat: -34.39, lng: 150.644 },
                 zoom: 8
