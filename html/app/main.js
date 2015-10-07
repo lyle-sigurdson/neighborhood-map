@@ -1,5 +1,6 @@
 /*jshint browser: true, devel: true */
 import xr from 'radiosilence/xr';
+import ko from 'knockout';
 
 import ViewModel from './ViewModel';
 
