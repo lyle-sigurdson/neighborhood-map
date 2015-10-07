@@ -13,19 +13,29 @@ export default class {
         });
 
         mapsApi(config.googleApiKey)().then(maps => {
-            let map = new maps.Map(document.getElementById('venues-map--map'), {
-                center: { lat: -34.39, lng: 150.644 },
-                zoom: 8
-            });
+            let map = new maps.Map(document.getElementById('venues-map--map'));
 
-            let marker = new maps.Marker({
-                map: map,
-                position: { lat: -34.39, lng: 150.644 }
-            });
+            let markers = [];
 
-            setInterval(() => {
-                marker.setVisible(!marker.getVisible());
-            }, 1000);
+            viewModel.venues.subscribe(venues => {
+                markers.forEach(marker => marker.setMap(null));
+                markers = [];
+
+                let latLngBounds = new maps.LatLngBounds();
+
+                venues.forEach(venue => {
+                    let marker = new maps.Marker({
+                        map: map,
+                        position: venue.location
+                    });
+
+                    latLngBounds.extend(marker.getPosition());
+
+                    markers.push(marker);
+                });
+
+                map.fitBounds(latLngBounds);
+            });
         });
     }
 }
