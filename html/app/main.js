@@ -1,4 +1,4 @@
-/*jshint browser: true, devel: true */
+/*jshint devel: true */
 import xr from 'radiosilence/xr';
 import ko from 'knockout';
 
