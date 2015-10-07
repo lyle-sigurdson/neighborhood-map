@@ -41,10 +41,7 @@ import VenuesMap from 'app/components/venues-map/main';
     };
 
     class ViewModel {
-        constructor() {
-        }
-
-        init(data) {
+        constructor(data) {
             koMapping.fromJS(data, mapping, this);
             koMapping.fromJS(getCategories(data.venues), mapping, this);
         }
@@ -74,14 +71,14 @@ import VenuesMap from 'app/components/venues-map/main';
 
 
     // Main
-    let viewModel = new ViewModel();
-    let component01 = new Component01(viewModel);
-    let venuesMap = new VenuesMap(viewModel);
 
     xr.get('test-data.json')
         .then(function (result) {
             // Init the app.
-            viewModel.init(result.response);
+            let viewModel = new ViewModel(result.response);
+
+            let component01 = new Component01(viewModel);
+            let venuesMap = new VenuesMap(viewModel);
 
             ko.applyBindings(viewModel);
 
