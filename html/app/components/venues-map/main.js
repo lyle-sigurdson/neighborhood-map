@@ -45,6 +45,6 @@ export default class {
     }
 
     addEventListener(event, f) {
-        this.map.setListener(event, f);
+        this.map.addListener(event, f);
     }
 }
