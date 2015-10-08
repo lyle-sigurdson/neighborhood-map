@@ -4,8 +4,8 @@ import ko from 'knockout';
 
 import ViewModel from './ViewModel';
 
-import Component01 from 'app/components/component-01/main';
-import VenuesMap from 'app/components/venues-map/main';
+import Component01 from './components/component-01/main';
+import VenuesMap from './components/venues-map/main';
 
 (function () {
     'use strict';
