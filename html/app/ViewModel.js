@@ -52,6 +52,8 @@ let mapping = {
 
 export default class ViewModel {
     constructor(data) {
+        data = data ? data : { venues: [] };
+
         koMapping.fromJS(data, mapping, this);
         koMapping.fromJS(getCategories(data.venues), mapping, this);
     }
