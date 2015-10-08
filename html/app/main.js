@@ -9,6 +9,8 @@ import VenuesMap from './components/venues-map/main';
 
 (function () {
     'use strict';
+
+    // App init.
     xr.get('test-data.json')
         .then(function (result) {
             // Init the app.
@@ -19,7 +21,7 @@ import VenuesMap from './components/venues-map/main';
 
             ko.applyBindings(viewModel);
 
-            // Apply updates as necessary.
+            // App update loop.
             [ 'test-data-one.json', '123-main.json', 'test-data.json' ].forEach((file, index) => {
                 setTimeout(() => {
                     xr.get(file).then(data => {
