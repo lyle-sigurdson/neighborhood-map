@@ -7,17 +7,22 @@ import config from 'app/app-config.json!';
 
 export default class {
     constructor(viewModel) {
+        this.viewModel = viewModel;
+        this.map = null;
+
         ko.components.register('venues-map', {
             viewModel: { instance: viewModel },
             template: template
         });
+    }
 
-        mapsApi(config.googleApiKey)().then(maps => {
-            let map = new maps.Map(document.getElementById('venues-map--map'));
+    init() {
+        return mapsApi(config.googleApiKey)().then(maps => {
+            this.map = new maps.Map(document.getElementById('venues-map--map'));
 
             let markers = [];
 
-            viewModel.venues.subscribe(venues => {
+            this.viewModel.venues.subscribe(venues => {
                 markers.forEach(marker => marker.setMap(null));
                 markers = [];
 
@@ -25,7 +30,7 @@ export default class {
 
                 venues.forEach(venue => {
                     let marker = new maps.Marker({
-                        map: map,
+                        map: this.map,
                         position: venue.location
                     });
 
@@ -34,8 +39,12 @@ export default class {
                     markers.push(marker);
                 });
 
-                map.fitBounds(latLngBounds);
+                this.map.fitBounds(latLngBounds);
             });
         });
+    }
+
+    addEventListener(event, f) {
+        this.map.setListener(event, f);
     }
 }

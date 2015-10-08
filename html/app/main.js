@@ -17,7 +17,10 @@ import VenuesMap from './components/venues-map/main';
             let viewModel = new ViewModel(result.response);
 
             let component01 = new Component01(viewModel);
+
             let venuesMap = new VenuesMap(viewModel);
+
+            venuesMap.init().then(() => console.log('map loaded'));
 
             ko.applyBindings(viewModel);
 
