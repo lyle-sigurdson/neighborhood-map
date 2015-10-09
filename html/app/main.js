@@ -5,7 +5,9 @@ import App from './App';
 
     let app = new App();
 
-    app.init().catch(function (err) {
+    app.init().then(() => {
+        app.run();
+    }).catch(err => {
         console.log('err ', err);
     });
 }());

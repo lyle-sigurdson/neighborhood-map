@@ -21,10 +21,13 @@ export default class {
         return Promise.all(initTasks).then(results => {
             return getVenues(results[0].loc).then(venues => {
                 this.viewModel.update(venues);
-                this.venuesMap.addEventListener('dragend', e => {
-                    console.log('dragend', e);
-                });
             });
+        });
+    }
+
+    run() {
+        this.venuesMap.addEventListener('dragend', e => {
+            console.log('dragend', e);
         });
     }
 }
