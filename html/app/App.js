@@ -4,6 +4,9 @@ import ViewModel from './ViewModel';
 import Component01 from './components/component-01/main';
 import VenuesMap from './components/venues-map/main';
 
+import getVenues from './getVenues';
+import getIpinfo from './getIpinfo';
+
 export default class {
     constructor() {
         this.viewModel = new ViewModel();
@@ -13,9 +16,14 @@ export default class {
     }
 
     init() {
-        return this.venuesMap.init().then(() => {
-            this.venuesMap.addEventListener('dragend', e => {
-                console.log('dragend', e);
+        let initTasks = [ getIpinfo(), this.venuesMap.init() ];
+
+        return Promise.all(initTasks).then(results => {
+            return getVenues(results[0].loc).then(venues => {
+                this.viewModel.update(venues);
+                this.venuesMap.addEventListener('dragend', e => {
+                    console.log('dragend', e);
+                });
             });
         });
     }
