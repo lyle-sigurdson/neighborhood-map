@@ -45,6 +45,9 @@ export default class {
     }
 
     addEventListener(event, f) {
-        this.map.addListener(event, f);
+        this.map.addListener(event, () => {
+            let center = this.map.getCenter();
+            f.call(this, `${center.lat()},${center.lng()}`);
+        });
     }
 }
