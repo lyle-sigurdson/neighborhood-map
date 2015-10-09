@@ -27,7 +27,9 @@ export default class {
 
     run() {
         this.venuesMap.addEventListener('dragend', e => {
-            console.log('dragend', e);
+            return getVenues(e).then(venues => {
+                this.viewModel.update(venues);
+            });
         });
     }
 }
