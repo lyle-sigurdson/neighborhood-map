@@ -1,21 +1,19 @@
 /*jshint browser: true */
+import config from './app-config.json!';
+
 import ko from 'knockout';
 import humane from 'humane-js';
 import {} from '../jspm_packages/github/wavded/humane-js@3.2.2/themes/original.css!';
 
 import ViewModel from './ViewModel';
+import Preferences from './Preferences.js';
 import Component01 from './components/component-01/main';
 import VenuesMap from './components/venues-map/main';
-
 import GeolocationDialog from './components/geolocation-dialog/main';
 
 import getVenues from './getVenues';
 import getIpinfo from './getIpinfo';
 import getCurrentPosition from './getCurrentPosition.js';
-
-import Preferences from './Preferences.js';
-
-import config from './app-config.json!';
 
 export default class {
     constructor() {
@@ -26,6 +24,7 @@ export default class {
         this.venuesMap = new VenuesMap(this.viewModel);
         this.initTasks = [];
         ko.applyBindings(this.viewModel);
+
     }
 
     init() {
