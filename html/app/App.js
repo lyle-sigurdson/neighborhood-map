@@ -48,10 +48,11 @@ export default class {
                 if (useGeolocationApi === 'yes') {
                     // User has set a preference that instructs us to use
                     // geolocation services, but it is not available.
-                    // TODO show appropriate error message saying falling back
-                    // to a less accurate ip-based geolocation method. This
-                    // should also grey out the control to set this preference
-                    // on any preferences screen.
+                    humane.log(
+                        'Geolocation is not available; falling back to IP ' +
+                        'address-based geolocation.',
+                        { timeout: 10 * 1000, clickToClose: true }
+                    );
                 }
                 this.initTasks.push(getIpinfo());
             }
