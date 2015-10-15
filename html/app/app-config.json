@@ -1,6 +1,7 @@
 {
     "googleApiKey": "AIzaSyBWk4fSH6f5DHHS08orkWrGwEMM4F2r-H8",
     "defaultPreferences": {
-        uiMode: "drag"
+        "uiMode": "drag",
+        "useGeolocationApi": "no"
     }
 }
