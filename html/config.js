@@ -20,6 +20,7 @@ System.config({
     "core-js": "npm:core-js@1.2.1",
     "css": "github:systemjs/plugin-css@0.1.18",
     "google-maps-api": "npm:google-maps-api@1.1.0",
+    "humane-js": "github:wavded/humane-js@3.2.2",
     "json": "github:systemjs/plugin-json@0.1.0",
     "knockout": "github:knockout/knockout@3.3.0",
     "radiosilence/xr": "github:radiosilence/xr@master",

@@ -1,5 +1,7 @@
 /*jshint browser: true */
 import ko from 'knockout';
+import humane from 'humane-js';
+import {} from '../jspm_packages/github/wavded/humane-js@3.2.2/themes/original.css!';
 
 import ViewModel from './ViewModel';
 import Component01 from './components/component-01/main';
