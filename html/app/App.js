@@ -62,6 +62,11 @@ export default class {
         return Promise.all([ positionTask(), this.venuesMap.init() ]).then(results => {
             return getVenues(results[0].loc).then(venues => {
                 this.viewModel.update(venues);
+            }).catch(err => {
+                humane.log(
+                    'Cannot retrieve venue data. Error message was: ' + err,
+                    { timeout: 10 * 1000, clickToClose: true }
+                );
             });
         });
     }
@@ -70,6 +75,11 @@ export default class {
         this.venuesMap.addEventListener('dragend', e => {
             return getVenues(e).then(venues => {
                 this.viewModel.update(venues);
+            }).catch(err => {
+                humane.log(
+                    'Cannot retrieve venue data. Error message was: ' + err,
+                    { timeout: 10 * 1000, clickToClose: true }
+                );
             });
         });
 
@@ -86,9 +96,13 @@ export default class {
             positionTask().then(position => {
                 return getVenues(position.loc).then(venues => {
                     return this.viewModel.update(venues);
+                }).catch(err => {
+                    humane.log(
+                        'Cannot retrieve venue data. Error message was: ' + err,
+                        { timeout: 10 * 1000, clickToClose: true }
+                    );
                 });
             });
-
         });
     }
 }
