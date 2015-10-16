@@ -2,12 +2,13 @@
 import ko from 'knockout';
 import template from './template.html!text';
 import {} from './style.css!';
-import mapsApi from 'google-maps-api';
+import mapsApiLoader from 'google-maps-api';
 import config from 'app/app-config.json!';
 
 export default class {
     constructor(viewModel) {
         this.viewModel = viewModel;
+        this.mapsApi = null;
         this.map = null;
 
         ko.components.register('venues-map', {
@@ -17,8 +18,10 @@ export default class {
     }
 
     init() {
-        return mapsApi(config.googleApiKey)().then(maps => {
-            this.map = new maps.Map(document.getElementById('venues-map--map'));
+        return mapsApiLoader(config.googleApiKey)().then(mapsApi => {
+            this.mapsApi = mapsApi;
+
+            this.map = new this.mapsApi.Map(document.getElementById('venues-map--map'));
 
             let markers = [];
 
@@ -26,10 +29,10 @@ export default class {
                 markers.forEach(marker => marker.setMap(null));
                 markers = [];
 
-                let latLngBounds = new maps.LatLngBounds();
+                let latLngBounds = new mapsApi.LatLngBounds();
 
                 venues.forEach(venue => {
-                    let marker = new maps.Marker({
+                    let marker = new mapsApi.Marker({
                         map: this.map,
                         position: venue.location
                     });
@@ -46,8 +49,12 @@ export default class {
 
     addEventListener(event, f) {
         this.map.addListener(event, () => {
-            let center = this.map.getCenter();
-            f.call(this, `${center.lat()},${center.lng()}`);
+            const center = this.map.getCenter(),
+                  wrappedCenter = new this.mapsApi.LatLng(
+                      center.lat(), center.lng()
+                  );
+
+            f.call(this, `${wrappedCenter.lat()},${wrappedCenter.lng()}`);
         });
     }
 }
