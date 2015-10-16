@@ -42,7 +42,9 @@ export default class {
                     markers.push(marker);
                 });
 
-                this.map.fitBounds(latLngBounds);
+                if (venues.length) {
+                    this.map.fitBounds(latLngBounds);
+                }
             });
         });
     }
