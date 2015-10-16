@@ -22,7 +22,6 @@ export default class {
         this.component01 = new Component01(this.viewModel);
         this.geolocationDialog = new GeolocationDialog();
         this.venuesMap = new VenuesMap(this.viewModel);
-        this.initTasks = [];
         ko.applyBindings(this.viewModel);
 
     }
@@ -30,18 +29,20 @@ export default class {
     init() {
         const useGeolocationApi = this.preferences.getItem('useGeolocationApi');
 
+        let positionTask = null;
+
         if (useGeolocationApi === 'never') {
-            this.initTasks.push(getIpinfo());
+            positionTask = getIpinfo;
         } else {
             if ('geolocation' in window.navigator) {
                 if (useGeolocationApi === 'no') {
-                    this.initTasks.push(getIpinfo());
+                    positionTask = getIpinfo;
                     this.geolocationDialog.show().then(result => {
                         this.geolocationDialog.hide();
                         this.preferences.setItem('useGeolocationApi', result);
                     });
                 } else {
-                    this.initTasks.push(getCurrentPosition());
+                    positionTask = getCurrentPosition;
                 }
             } else {
                 // Geolocation API is not available.
@@ -54,13 +55,11 @@ export default class {
                         { timeout: 10 * 1000, clickToClose: true }
                     );
                 }
-                this.initTasks.push(getIpinfo());
+                positionTask = getIpinfo;
             }
         }
 
-        this.initTasks.push(this.venuesMap.init());
-
-        return Promise.all(this.initTasks).then(results => {
+        return Promise.all([ positionTask(), this.venuesMap.init() ]).then(results => {
             return getVenues(results[0].loc).then(venues => {
                 this.viewModel.update(venues);
             });
