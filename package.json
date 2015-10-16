@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "gulp": "^3.9.0",
     "jspm": "^0.16.11"
   },
   "jspm": {
