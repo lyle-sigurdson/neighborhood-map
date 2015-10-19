@@ -1,12 +1,7 @@
 .venues-map {
     height: 100%;
-    color: red;
 }
 
 #venues-map--map {
     height: 100%;
-}
-
-.venues-map--title {
-    color: green;
 }
