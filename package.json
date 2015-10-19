@@ -9,8 +9,14 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "del": "^2.0.2",
     "gulp": "^3.9.0",
-    "jspm": "^0.16.11"
+    "gulp-html-replace": "^1.5.4",
+    "gulp-inline-source": "^2.1.0",
+    "gulp-jspm": "^0.4.1",
+    "gulp-minify-html": "^1.0.4",
+    "jspm": "^0.16.11",
+    "run-sequence": "^1.1.4"
   },
   "jspm": {
     "directories": {
