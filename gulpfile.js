@@ -8,11 +8,14 @@ var gulp = require('gulp'),
     minifyHtml = require('gulp-minify-html'),
     Cachebust = require('gulp-cachebust'),
     cachebust = new Cachebust({ checksumLength: 16 }),
+    gzip = require('gulp-gzip'),
+    tar = require('gulp-tar'),
     runSeq = require('run-sequence'),
     jspm = require('jspm'),
+    package_json = require('./package.json'),
     main = 'app/main.js',
     srcDir = 'html',
-    destDir = 'dest';
+    destDir = package_json.name;
 
 gulp.task('clean', function () {
     return del(destDir);
@@ -43,6 +46,20 @@ gulp.task('html', function () {
         .pipe(gulp.dest(destDir));
 });
 
+gulp.task('gzip', function () {
+    return gulp.src(destDir + '/*')
+        .pipe(gzip({ level: 9 }))
+        .pipe(gulp.dest(destDir));
+});
+
+gulp.task('tar', function () {
+    return gulp.src('@(' + destDir + ')/**/*')
+        .pipe(tar(destDir + '-' + package_json.version + '.tar'))
+        .pipe(gulp.dest('./'));
+});
+
 gulp.task('default', function (done) {
-    runSeq('clean', 'bundleSFX', 'cache-bust-resources', 'html', 'prune', done);
+    runSeq('clean', 'bundleSFX', 'cache-bust-resources', 'html', 'prune',
+        'gzip', 'tar', done
+    );
 });

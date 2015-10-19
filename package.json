@@ -1,5 +1,5 @@
 {
-  "name": "try-01",
+  "name": "neighborhood-map",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,7 @@
     "del": "^2.0.2",
     "gulp": "^3.9.0",
     "gulp-cachebust": "0.0.6",
+    "gulp-gzip": "^1.2.0",
     "gulp-html-replace": "^1.5.4",
     "gulp-inline-source": "^2.1.0",
     "gulp-jspm": "^0.4.1",
@@ -39,5 +40,8 @@
       "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
     }
+  },
+  "dependencies": {
+    "gulp-tar": "^1.5.0"
   }
 }
