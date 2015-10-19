@@ -7,7 +7,7 @@ import {} from '../jspm_packages/github/wavded/humane-js@3.2.2/themes/original.c
 
 import ViewModel from './ViewModel';
 import Preferences from './Preferences.js';
-import Component01 from './components/component-01/main';
+import VenuesList from './components/venues-list/main';
 import VenuesMap from './components/venues-map/main';
 import GeolocationDialog from './components/geolocation-dialog/main';
 
@@ -19,7 +19,7 @@ export default class {
     constructor() {
         this.preferences = new Preferences('__NM__', config.defaultPreferences);
         this.viewModel = new ViewModel();
-        this.component01 = new Component01(this.viewModel);
+        this.venuesList = new VenuesList(this.viewModel);
         this.geolocationDialog = new GeolocationDialog();
         this.venuesMap = new VenuesMap(this.viewModel);
         ko.applyBindings(this.viewModel);

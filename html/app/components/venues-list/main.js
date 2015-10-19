@@ -4,7 +4,7 @@ import {} from './style.css!';
 
 export default class {
     constructor(viewModel) {
-        ko.components.register('component-01', {
+        ko.components.register('venues-list', {
             viewModel: { instance: viewModel },
             template: template
         });
