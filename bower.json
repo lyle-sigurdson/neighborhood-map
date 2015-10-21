@@ -12,5 +12,8 @@
     "html/bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "inuit-layout": "~0.3.2"
+  }
 }
