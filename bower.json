@@ -1,0 +1,16 @@
+{
+  "name": "shared-viewmodel",
+  "version": "0.0.0",
+  "authors": [
+    "Lyle Sigurdson <lyle@sent.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "html/bower_components",
+    "test",
+    "tests"
+  ]
+}
