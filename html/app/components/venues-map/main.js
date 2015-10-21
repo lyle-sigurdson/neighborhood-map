@@ -1,7 +1,6 @@
 /*jshint browser: true */
 import ko from 'knockout';
 import template from './template.html!text';
-import {} from './style.css!';
 import mapsApiLoader from 'google-maps-api';
 import config from 'app/app-config.json!';
 

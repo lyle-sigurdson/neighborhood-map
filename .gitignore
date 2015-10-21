@@ -2,3 +2,6 @@ node_modules
 html/jspm_packages
 neighborhood-map
 neighborhood-map-0.0.0.tar
+html/app/.sass-cache
+html/app/main.css
+html/app/main.css.map

@@ -15,6 +15,8 @@ import getVenues from './getVenues';
 import getIpinfo from './getIpinfo';
 import getCurrentPosition from './getCurrentPosition.js';
 
+import './main.css!';
+
 export default class {
     constructor() {
         this.preferences = new Preferences('__NM__', config.defaultPreferences);
