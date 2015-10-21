@@ -1,6 +1,6 @@
 node_modules
 html/jspm_packages
-html/bower_components
+html/app/bower_components
 neighborhood-map
 neighborhood-map-0.0.0.tar
 html/app/.sass-cache
