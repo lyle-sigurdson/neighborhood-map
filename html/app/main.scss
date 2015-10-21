@@ -1,2 +1,35 @@
+// Settings
+@import 'bower_components/inuit-defaults/settings.defaults';
+@import 'bower_components/inuit-responsive-settings/settings.responsive';
+
+// Tools
+@import 'bower_components/inuit-functions/tools.functions';
+@import 'bower_components/inuit-responsive-tools/tools.responsive';
+@import 'bower_components/inuit-tools-widths/tools.widths';
+
+// Generic
+@import 'bower_components/inuit-normalize.css/generic.normalize';
+@import 'bower_components/inuit-reset/generic.reset';
+
+// Base
+
+// Objects
+@import 'bower_components/inuit-layout/objects.layout';
+
+// Components
 @import 'components/venues-list/style';
 @import 'components/venues-map/style';
+
+// Trumps
+@import 'bower_components/inuit-widths/trumps.widths';
+@import 'bower_components/inuit-widths-responsive/trumps.widths-responsive';
+
+// Full height; necessary for google maps to display.
+.u-full-height {
+    height: 100%;
+}
+
+// Prevent map from wrapping below venue list.
+.u-4\/5 {
+    width: 79% !important;
+}

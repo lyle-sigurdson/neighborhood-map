@@ -14,6 +14,9 @@
     "tests"
   ],
   "dependencies": {
-    "inuit-layout": "~0.3.2"
+    "inuit-layout": "~0.3.2",
+    "inuit-normalize.css": "inuit-normalize#~3.0.3",
+    "inuit-reset": "~0.1.1",
+    "inuit-widths-responsive": "~0.2.2"
   }
 }

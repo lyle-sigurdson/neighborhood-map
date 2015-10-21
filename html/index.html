@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="u-full-height">
 <head>
   <meta charset="UTF-8">
   <title></title>
-  <link inline rel="stylesheet" href="index.css">
 </head>
-<body>
+<body class="u-full-height">
   <geolocation-dialog></geolocation-dialog>
-  <venues-list></venues-list>
-  <venues-map></venues-map>
+  <div class="layout u-full-height">
+    <venues-list class="layout__item layout--left u-1/5"></venues-list>
+    <venues-map class="layout__item u-full-height layout--right u-4/5"></venues-map>
+  </div>
   <!-- build:js -->
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>

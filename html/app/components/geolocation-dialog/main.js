@@ -2,7 +2,6 @@ import ko from 'knockout';
 
 import ViewModel from './ViewModel.js';
 import template from './template.html!text';
-import {} from './style.css!';
 
 export default class {
     constructor() {
