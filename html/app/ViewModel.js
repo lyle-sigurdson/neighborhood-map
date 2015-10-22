@@ -16,6 +16,7 @@ class Category {
     constructor(spec) {
         this.id = spec.id;
         this.pluralName = spec.pluralName;
+        this.venues = spec.venues;
     }
 }
 
@@ -30,9 +31,17 @@ let getCategories = (venues) => {
 
     let result = [];
 
-    categories.forEach((value) =>
-        result.push(value)
-    );
+    categories.forEach(outerCategory => {
+        outerCategory.venues = [];
+        venues.forEach(venue => {
+            venue.categories.forEach(category => {
+                if (outerCategory.id === category.id) {
+                    outerCategory.venues.push(venue);
+                }
+            });
+        });
+        result.push(outerCategory);
+    });
 
     return {
         categories: result
