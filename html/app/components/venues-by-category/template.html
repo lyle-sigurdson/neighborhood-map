@@ -1,0 +1,12 @@
+<div class="c-venues-by-category">
+  <ul data-bind="foreach: categories">
+    <li>
+      <p data-bind="text: pluralName" class="c-venues-by-category__category-name"></p>
+      <ul data-bind="foreach: venues" class="c-venues-by-category__venue-list">
+        <li>
+          <p data-bind="text: name" ></p>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

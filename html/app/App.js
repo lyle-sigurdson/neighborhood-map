@@ -8,6 +8,7 @@ import humane from 'humane-js';
 import ViewModel from './ViewModel';
 import Preferences from './Preferences.js';
 import VenuesList from './components/venues-list/main';
+import VenuesByCategory from './components/venues-by-category/main';
 import VenuesMap from './components/venues-map/main';
 import GeolocationDialog from './components/geolocation-dialog/main';
 
@@ -22,6 +23,7 @@ export default class {
         this.preferences = new Preferences('__NM__', config.defaultPreferences);
         this.viewModel = new ViewModel();
         this.venuesList = new VenuesList(this.viewModel);
+        this.venuesByCategory = new VenuesByCategory(this.viewModel);
         this.geolocationDialog = new GeolocationDialog();
         this.venuesMap = new VenuesMap(this.viewModel);
         ko.applyBindings(this.viewModel);

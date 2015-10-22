@@ -12,6 +12,10 @@
 @import 'bower_components/inuit-reset/generic.reset';
 
 // Base
+@import 'bower_components/inuit-page/base.page';
+html,body {
+    height: 100%;
+}
 
 // Objects
 @import 'bower_components/inuit-layout/objects.layout';
@@ -19,17 +23,20 @@
 // Components
 @import 'components/venues-list/style';
 @import 'components/venues-map/style';
+@import 'components/venues-by-category/style';
 
 // Trumps
 @import 'bower_components/inuit-widths/trumps.widths';
 @import 'bower_components/inuit-widths-responsive/trumps.widths-responsive';
 
-// Full height; necessary for google maps to display.
+// Needed for elements leading up the the google map; without this, the map will
+// not show.
 .u-full-height {
     height: 100%;
 }
 
-// Prevent map from wrapping below venue list.
-.u-4\/5 {
-    width: 79% !important;
+// Map wraps underneath the categories/venues list if I use .u-4\/5, so I have
+// to use this:
+.u-just-under-4\/5 {
+    width: 79%;
 }
