@@ -17,6 +17,8 @@
     "inuit-layout": "~0.3.2",
     "inuit-normalize.css": "inuit-normalize#~3.0.3",
     "inuit-widths-responsive": "~0.2.2",
-    "inuit-page": "~0.2.1"
+    "inuit-page": "~0.2.1",
+    "inuit-lists": "~0.1.0",
+    "inuit-list-bare": "~0.3.0"
   }
 }

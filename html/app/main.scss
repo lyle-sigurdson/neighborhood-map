@@ -11,13 +11,20 @@
 @import 'bower_components/inuit-normalize.css/generic.normalize';
 
 // Base
+@import 'bower_components/inuit-lists/base.lists';
 @import 'bower_components/inuit-page/base.page';
+html {
+    overflow-y: auto;
+}
+
 html,body {
     height: 100%;
 }
 
 // Objects
+$inuit-enable-layout--tiny: true;
 @import 'bower_components/inuit-layout/objects.layout';
+@import 'bower_components/inuit-list-bare/objects.list-bare';
 
 // Components
 @import 'components/venues-list/style';
