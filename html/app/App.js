@@ -22,7 +22,7 @@ export default class {
     constructor() {
         this.preferences = new Preferences('__NM__', config.defaultPreferences);
         this.viewModel = new ViewModel();
-        this.venuesList = new VenuesList(this.viewModel);
+        this.venuesList = new VenuesList();
         this.venuesByCategory = new VenuesByCategory(this.viewModel);
         this.geolocationDialog = new GeolocationDialog();
         this.venuesMap = new VenuesMap(this.viewModel);

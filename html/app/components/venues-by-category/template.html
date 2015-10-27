@@ -2,11 +2,7 @@
   <ul data-bind="foreach: categories" class="c-venues-by-category__categories list-bare">
     <li>
       <strong data-bind="text: pluralName" class="c-venues-by-category__category-name"></strong>
-      <ul data-bind="foreach: venues" class="c-venues-by-category__venue-list">
-        <li class="list-bare">
-          <p data-bind="text: name" class="c-venues-by-category__venue-name"></p>
-        </li>
-      </ul>
+      <venues-list params="venues: venues"></venues-list>
     </li>
   </ul>
 </div>
