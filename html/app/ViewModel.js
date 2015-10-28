@@ -66,10 +66,20 @@ export default class ViewModel {
 
         koMapping.fromJS(data, mapping, this);
         koMapping.fromJS(getCategories(data.venues), mapping, this);
+
+        this.selectedVenue = ko.observable(null);
     }
 
     update(data) {
         koMapping.fromJS(data, this);
         koMapping.fromJS(getCategories(data.venues), this);
+    }
+
+    selectVenue(venue) {
+        this.selectedVenue(venue);
+    }
+
+    isVenueSelected(venue) {
+        return venue === this.selectedVenue();
     }
 }
