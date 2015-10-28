@@ -56,7 +56,8 @@ let mapping = {
     categories: {
         key: data => ko.utils.unwrapObservable(data.id),
         create: options => new Category(options.data)
-    }
+    },
+    ignore: [ 'confident' ]
 };
 
 export default class ViewModel {
