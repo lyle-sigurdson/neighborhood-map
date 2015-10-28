@@ -1,25 +1,28 @@
 /*jshint browser: true */
 import mapsApiLoader from 'google-maps-api';
 import config from 'app/app-config.json!';
+import infoWindowContent from './infoWindowContent.js';
 
 export default class {
     constructor(viewModel) {
         this.viewModel = viewModel;
         this.mapsApi = null;
         this.map = null;
+        this.infoWindow = null;
     }
 
     init() {
         return mapsApiLoader(config.googleApiKey)().then(mapsApi => {
             this.mapsApi = mapsApi;
+            this.infoWindow = new this.mapsApi.InfoWindow();
 
             this.map = new this.mapsApi.Map(document.getElementById('venues-map'));
 
-            let markers = [];
+            let markers = new Map();
 
             this.viewModel.venues.subscribe(venues => {
                 markers.forEach(marker => marker.setMap(null));
-                markers = [];
+                markers.clear();
 
                 let latLngBounds = new mapsApi.LatLngBounds();
 
@@ -31,12 +34,20 @@ export default class {
 
                     latLngBounds.extend(marker.getPosition());
 
-                    markers.push(marker);
+                    markers.set(venue.id, marker);
                 });
 
                 if (venues.length) {
                     this.map.fitBounds(latLngBounds);
                 }
+            });
+
+            this.viewModel.selectedVenue.subscribe(selected => {
+                this.infoWindow.close();
+
+                this.infoWindow.setContent(infoWindowContent(selected));
+
+                this.infoWindow.open(this.map, markers.get(selected.id));
             });
         });
     }
