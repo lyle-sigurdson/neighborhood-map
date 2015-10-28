@@ -1,6 +1,4 @@
 /*jshint browser: true */
-import ko from 'knockout';
-import template from './template.html!text';
 import mapsApiLoader from 'google-maps-api';
 import config from 'app/app-config.json!';
 
@@ -9,18 +7,13 @@ export default class {
         this.viewModel = viewModel;
         this.mapsApi = null;
         this.map = null;
-
-        ko.components.register('venues-map', {
-            viewModel: { instance: viewModel },
-            template: template
-        });
     }
 
     init() {
         return mapsApiLoader(config.googleApiKey)().then(mapsApi => {
             this.mapsApi = mapsApi;
 
-            this.map = new this.mapsApi.Map(document.getElementById('venues-map--map'));
+            this.map = new this.mapsApi.Map(document.getElementById('venues-map'));
 
             let markers = [];
 
