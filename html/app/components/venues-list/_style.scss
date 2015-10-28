@@ -5,4 +5,10 @@
 
 .c-venues-list__venue-name {
     margin: -4px 0 1em 0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.c-venues-list__venue-name--selected {
+    background-color: red;
 }

@@ -1,3 +1,8 @@
-<ul data-bind="foreach: venues" class="c-venues-list">
-  <li data-bind="text: name" class="c-venues-list__venue-name"></li>
+<ul data-bind="foreach: venues" class="c-venues-list list-bare">
+  <li data-bind="text: name,
+                 click: function () { $root.selectVenue.call($root, $data); },
+                 clickBubble: false,
+                 css: { 'c-venues-list__venue-name--selected': $root.isVenueSelected.call($root, $data) }"
+      class="c-venues-list__venue-name">
+  </li>
 </ul>
