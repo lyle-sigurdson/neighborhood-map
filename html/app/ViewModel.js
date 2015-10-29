@@ -7,7 +7,7 @@ class Venue {
         this.id = spec.id;
         this.name = spec.name;
         this.location = spec.location;
-        this.categories = spec.categories;
+        this.contact = spec.contact;
         this.visible = ko.observable(true);
     }
 }
