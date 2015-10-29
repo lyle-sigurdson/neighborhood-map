@@ -34,7 +34,14 @@ export default class {
                     category.venues.forEach(venue => {
                         let marker = new mapsApi.Marker({
                             map: this.map,
-                            position: venue.location
+                            position: venue.location,
+                            icon: {
+                                path: mapsApi.SymbolPath.CIRCLE,
+                                scale: 10,
+                                strokeWeight: 1,
+                                fillColor: category.color,
+                                fillOpacity: 1
+                            }
                         });
 
                         // Must use an ES5 function literal here because google
