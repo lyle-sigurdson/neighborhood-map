@@ -24,24 +24,26 @@ export default class {
 
             let markers = new Map();
 
-            this.viewModel.venues.subscribe(venues => {
+            this.viewModel.categories.subscribe(categories => {
                 markers.forEach(marker => marker.setMap(null));
                 markers.clear();
 
                 let latLngBounds = new mapsApi.LatLngBounds();
 
-                venues.forEach(venue => {
-                    let marker = new mapsApi.Marker({
-                        map: this.map,
-                        position: venue.location
+                categories.forEach(category => {
+                    category.venues.forEach(venue => {
+                        let marker = new mapsApi.Marker({
+                            map: this.map,
+                            position: venue.location
+                        });
+
+                        latLngBounds.extend(marker.getPosition());
+
+                        markers.set(venue, marker);
                     });
-
-                    latLngBounds.extend(marker.getPosition());
-
-                    markers.set(venue.id, marker);
                 });
 
-                if (venues.length) {
+                if (categories.length) {
                     this.map.fitBounds(latLngBounds);
                 }
             });
@@ -51,7 +53,7 @@ export default class {
 
                 if (selected) {
                     this.infoWindow.setContent(infoWindowContent(selected));
-                    this.infoWindow.open(this.map, markers.get(selected.id));
+                    this.infoWindow.open(this.map, markers.get(selected));
                 }
             });
         });
