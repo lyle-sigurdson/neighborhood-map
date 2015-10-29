@@ -16,6 +16,10 @@ export default class {
             this.mapsApi = mapsApi;
             this.infoWindow = new this.mapsApi.InfoWindow();
 
+            mapsApi.event.addListener(this.infoWindow, 'closeclick', () => {
+                this.viewModel.selectVenue(null);
+            });
+
             this.map = new this.mapsApi.Map(document.getElementById('venues-map'));
 
             let markers = new Map();
@@ -45,9 +49,10 @@ export default class {
             this.viewModel.selectedVenue.subscribe(selected => {
                 this.infoWindow.close();
 
-                this.infoWindow.setContent(infoWindowContent(selected));
-
-                this.infoWindow.open(this.map, markers.get(selected.id));
+                if (selected) {
+                    this.infoWindow.setContent(infoWindowContent(selected));
+                    this.infoWindow.open(this.map, markers.get(selected.id));
+                }
             });
         });
     }
