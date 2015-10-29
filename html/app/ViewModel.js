@@ -16,7 +16,9 @@ class Category {
     constructor(spec) {
         this.id = spec.id;
         this.pluralName = spec.pluralName;
-        this.venues = spec.venues;
+        this.venues = spec.venues.map((venue) => {
+            return new Venue(venue);
+        });
     }
 }
 
@@ -49,10 +51,6 @@ let getCategories = (venues) => {
 };
 
 let mapping = {
-    venues: {
-        key: data => ko.utils.unwrapObservable(data.id),
-        create: options => new Venue(options.data)
-    },
     categories: {
         key: data => ko.utils.unwrapObservable(data.id),
         create: options => new Category(options.data)
@@ -64,14 +62,12 @@ export default class ViewModel {
     constructor(data) {
         data = data ? data : { venues: [] };
 
-        koMapping.fromJS(data, mapping, this);
         koMapping.fromJS(getCategories(data.venues), mapping, this);
 
         this.selectedVenue = ko.observable(null);
     }
 
     update(data) {
-        koMapping.fromJS(data, this);
         koMapping.fromJS(getCategories(data.venues), this);
     }
 
