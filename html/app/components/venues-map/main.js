@@ -37,6 +37,21 @@ export default class {
                             position: venue.location
                         });
 
+                        // Must use an ES5 function literal here because google
+                        // maps API binds the context of callbacks to the
+                        // target (i.e., whatever was clicked.) This also means
+                        // the return of the "this is that" pattern so I can
+                        // access the view model.
+                        let that = this;
+                        marker.addListener('click', function () {
+                            for (let pair of markers) {
+                                if (pair[1] === this) {
+                                    that.viewModel.selectVenue(pair[0]);
+                                    break;
+                                }
+                            }
+                        });
+
                         latLngBounds.extend(marker.getPosition());
 
                         markers.set(venue, marker);
