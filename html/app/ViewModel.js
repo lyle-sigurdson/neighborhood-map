@@ -1,6 +1,7 @@
 /*jshint module: true */
 import ko from 'knockout';
 import koMapping from 'SteveSanderson/knockout.mapping';
+import assignCategoryColors from './assignCategoryColors';
 
 class Venue {
     constructor(spec) {
@@ -16,6 +17,7 @@ class Category {
     constructor(spec) {
         this.id = spec.id;
         this.pluralName = spec.pluralName;
+        this.color = spec.color;
         this.venues = spec.venues.map((venue) => {
             return new Venue(venue);
         });
@@ -31,6 +33,7 @@ let getCategories = (venues) => {
         )
     );
 
+
     let result = [];
 
     categories.forEach(outerCategory => {
@@ -44,6 +47,8 @@ let getCategories = (venues) => {
         });
         result.push(outerCategory);
     });
+
+    assignCategoryColors(result);
 
     return {
         categories: result
