@@ -17,6 +17,7 @@ System.config({
     "SteveSanderson/knockout.mapping": "github:SteveSanderson/knockout.mapping@2.4.1",
     "babel": "npm:babel-core@5.8.25",
     "babel-runtime": "npm:babel-runtime@5.8.25",
+    "chroma-js": "npm:chroma-js@1.1.1",
     "clean-css": "npm:clean-css@3.4.6",
     "core-js": "npm:core-js@1.2.1",
     "css": "github:systemjs/plugin-css@0.1.18",
@@ -86,6 +87,9 @@ System.config({
       "base64-js": "npm:base64-js@0.0.8",
       "ieee754": "npm:ieee754@1.1.6",
       "is-array": "npm:is-array@1.0.1"
+    },
+    "npm:chroma-js@1.1.1": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
     "npm:clean-css@3.4.6": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
