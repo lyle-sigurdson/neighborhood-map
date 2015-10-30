@@ -1,14 +1,10 @@
-.c-venues-list {
-    padding-left: 1em;
-    margin: 0 0 .75em 0;
-}
-
 .c-venues-list__venue-name {
-    margin: -4px 0 1em 0;
+    margin-bottom: .5em;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .c-venues-list__venue-name--selected {
-    background-color: red;
+    color: white;
+    background-color: black;
 }
