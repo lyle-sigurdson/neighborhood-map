@@ -18,6 +18,7 @@ class Category {
         this.id = spec.id;
         this.pluralName = spec.pluralName;
         this.color = spec.color;
+        this.icon = spec.icon;
         this.venues = spec.venues.map((venue) => {
             return new Venue(venue);
         });
