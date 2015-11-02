@@ -45,3 +45,15 @@ $inuit-enable-layout--tiny: true;
 .u-just-under-4\/5 {
     width: 79%;
 }
+
+// "Powered By Foursquare" attribution.
+html {
+    position: relative;
+}
+
+.foursquare-attribution {
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    z-index: 1;
+}
