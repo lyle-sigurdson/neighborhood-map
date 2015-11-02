@@ -1,13 +1,8 @@
 <div class="c-venues-by-category">
   <ul data-bind="foreach: categories" class="c-venues-by-category__categories list-bare">
-    <li class="c-venues-by-category__category">
-      <div class="c-venues-by-category__category__header">
-        <div data-bind="style: { 'background-color': color }" class="c-venues-by-category__category__header__icon">
-          <img data-bind="attr: { src: icon.prefix + '32' + icon.suffix }" class="c-venues-by-category__category__header__icon__img">
-        </div>
-        <div class="c-venues-by-category__category__header__title">
-          <span data-bind="text: pluralName"></span>
-        </div>
+    <li data-bind="style: { background: 'url(' + icon.prefix + '32' + icon.suffix + ') no-repeat, linear-gradient(90deg, ' + color + ' 1px, ' + color + ' 32px, #FFF 33px, #FFF 100%)' }" class="c-venues-by-category__category">
+      <div class="c-venues-by-category__category__title">
+        <span data-bind="text: pluralName"></span>
       </div>
       <venues-list class="c-venues-by-category__category__venues" params="venues: venues"></venues-list>
     </li>
