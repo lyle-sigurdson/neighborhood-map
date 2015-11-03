@@ -63,6 +63,12 @@ export default class {
                             if (!visible && this.viewModel.isVenueSelected(venue)) {
                                 this.infoWindow.close();
                             }
+
+                            if (visible && this.viewModel.isVenueSelected(venue)) {
+                                this.infoWindow.setContent(infoWindowContent(venue));
+                                this.infoWindow.open(this.map, markers.get(venue));
+                            }
+
                             marker.setVisible(visible);
                         });
 
