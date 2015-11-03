@@ -60,6 +60,9 @@ export default class {
                         });
 
                         venue.visible.subscribe(visible => {
+                            if (!visible && this.viewModel.isVenueSelected(venue)) {
+                                this.infoWindow.close();
+                            }
                             marker.setVisible(visible);
                         });
 
