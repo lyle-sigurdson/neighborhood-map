@@ -22,6 +22,10 @@ export default class {
 
             this.map = new this.mapsApi.Map(document.getElementById('venues-map'));
 
+            this.map.addListener('click', () => {
+                this.viewModel.selectVenue(null);
+            });
+
             let markers = new Map();
 
             this.viewModel.categories.subscribe(categories => {
