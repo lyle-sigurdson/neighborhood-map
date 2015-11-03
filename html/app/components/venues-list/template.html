@@ -2,7 +2,8 @@
   <li data-bind="text: name,
                  click: function () { $root.selectVenue.call($root, $data); },
                  clickBubble: false,
-                 css: { 'c-venues-list__venue-name--selected': $root.isVenueSelected.call($root, $data) }"
+                 css: { 'c-venues-list__venue-name--selected': $root.isVenueSelected.call($root, $data) },
+                 visible: visible"
       class="c-venues-list__venue-name">
   </li>
 </ul>
