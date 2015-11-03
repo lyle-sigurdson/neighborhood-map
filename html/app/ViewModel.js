@@ -23,7 +23,7 @@ class Category {
             return new Venue(venue);
         });
         this.visible = ko.computed(() => {
-            return this.venues.every(venue => {
+            return this.venues.some(venue => {
                 return venue.visible();
             });
         });
