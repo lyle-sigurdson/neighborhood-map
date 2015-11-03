@@ -59,6 +59,10 @@ export default class {
                             }
                         });
 
+                        venue.visible.subscribe(visible => {
+                            marker.setVisible(visible);
+                        });
+
                         latLngBounds.extend(marker.getPosition());
 
                         markers.set(venue, marker);
