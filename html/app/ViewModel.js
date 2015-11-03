@@ -22,6 +22,11 @@ class Category {
         this.venues = spec.venues.map((venue) => {
             return new Venue(venue);
         });
+        this.visible = ko.computed(() => {
+            return this.venues.every(venue => {
+                return venue.visible();
+            });
+        });
     }
 }
 
