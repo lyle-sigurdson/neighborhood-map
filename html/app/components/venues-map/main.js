@@ -64,6 +64,14 @@ export default class {
                             }
                         });
 
+                        marker.addListener('mouseover', function () {
+                            that.viewModel.hoverVenue(venue);
+                        });
+
+                        marker.addListener('mouseout', function () {
+                            that.viewModel.hoverVenue(null);
+                        });
+
                         venue.visible.subscribe(visible => {
                             if (!visible && this.viewModel.isVenueSelected(venue)) {
                                 this.infoWindow.close();

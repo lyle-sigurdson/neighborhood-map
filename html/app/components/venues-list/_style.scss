@@ -8,3 +8,12 @@
     color: white;
     background-color: rgb(142, 142, 142);
 }
+
+.c-venues-list__venue-name--hovered {
+    background-color: rgb(200, 200, 200);
+}
+
+.c-venues-list__venue-name--selected.c-venues-list__venue-name--hovered {
+    color: white;
+    background-color: rgb(132, 132, 132);
+}
