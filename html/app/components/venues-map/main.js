@@ -43,7 +43,8 @@ export default class {
                             icon: {
                                 path: mapsApi.SymbolPath.CIRCLE,
                                 scale: 10,
-                                strokeWeight: 1,
+                                strokeWeight: 3,
+                                strokeColor: '#FFF',
                                 fillColor: category.color,
                                 fillOpacity: 1
                             }
@@ -100,6 +101,9 @@ export default class {
                 let deselectedMarker = markers.get(deselected);
 
                 if (deselectedMarker) {
+                    deselectedMarker.setIcon(Object.assign(
+                        deselectedMarker.getIcon(), { strokeColor: '#FFF' }
+                    ));
                     deselectedMarker.setZIndex(0);
                 }
             }, this, 'beforeChange');
@@ -113,24 +117,55 @@ export default class {
                     this.infoWindow.setContent(infoWindowContent(selected));
                     this.infoWindow.open(this.map, selectedMarker);
                     selectedMarker.setZIndex(markers.length);
+                    selectedMarker.setIcon(Object.assign(
+                        selectedMarker.getIcon(),
+                        { strokeColor: 'rgb(142, 142, 142)' }
+                    ));
                     selectedMarker.setAnimation(null);
                 }
             });
 
             this.viewModel.hoveredVenue.subscribe(unHovered => {
                 if (unHovered && unHovered.venue) {
-                    let marker = markers.get(unHovered.venue);
+                    let unHoveredMarker = markers.get(unHovered.venue);
 
-                    if (marker) {
-                        marker.setAnimation(null);
+                    if (unHoveredMarker) {
+                        if (this.viewModel.isVenueSelected(unHovered.venue)) {
+                            unHoveredMarker.setIcon(Object.assign(
+                                unHoveredMarker.getIcon(),
+                                { strokeColor: 'rgb(142, 142, 142)' }
+                            ));
+
+                        } else {
+                            unHoveredMarker.setIcon(Object.assign(
+                                unHoveredMarker.getIcon(),
+                                { strokeColor: '#FFF' }
+                            ));
+
+                            unHoveredMarker.setAnimation(null);
+                        }
                     }
                 }
             }, this, 'beforeChange');
 
             this.viewModel.hoveredVenue.subscribe(hovered => {
-                if (hovered.venue && !this.viewModel.isVenueSelected(hovered.venue)) {
-                    if (hovered.hoverOrigin !== this) {
-                        markers.get(hovered.venue).setAnimation(mapsApi.Animation.BOUNCE);
+                if (hovered.venue) {
+                    let hoveredMarker = markers.get(hovered.venue);
+
+                    if (this.viewModel.isVenueSelected(hovered.venue)) {
+                        hoveredMarker.setIcon(Object.assign(
+                            hoveredMarker.getIcon(),
+                            { strokeColor: 'rgb(132, 132, 132)' }
+                        ));
+                    } else {
+                        hoveredMarker.setIcon(Object.assign(
+                            hoveredMarker.getIcon(),
+                            { strokeColor: 'rgb(200, 200, 200)' }
+                        ));
+
+                        if (hovered.hoverOrigin !== this) {
+                            hoveredMarker.setAnimation(mapsApi.Animation.BOUNCE);
+                        }
                     }
                 }
             });
