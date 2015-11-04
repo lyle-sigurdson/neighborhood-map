@@ -99,10 +99,25 @@ export default class {
             this.viewModel.selectedVenue.subscribe(selected => {
                 this.infoWindow.close();
 
+                let selectedMarker = markers.get(selected);
+
                 if (selected) {
                     this.infoWindow.setContent(infoWindowContent(selected));
-                    this.infoWindow.open(this.map, markers.get(selected));
-                    markers.get(selected).setZIndex(markers.length);
+                    this.infoWindow.open(this.map, selectedMarker);
+                    selectedMarker.setZIndex(markers.length);
+                    selectedMarker.setAnimation(null);
+                }
+            });
+
+            this.viewModel.hoveredVenue.subscribe(unHovered => {
+                if (unHovered) {
+                    markers.get(unHovered).setAnimation(null);
+                }
+            }, this, 'beforeChange');
+
+            this.viewModel.hoveredVenue.subscribe(hovered => {
+                if (hovered && !this.viewModel.isVenueSelected(hovered)) {
+                    markers.get(hovered).setAnimation(mapsApi.Animation.BOUNCE);
                 }
             });
         });

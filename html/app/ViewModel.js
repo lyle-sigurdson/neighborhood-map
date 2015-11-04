@@ -75,6 +75,8 @@ export default class ViewModel {
         koMapping.fromJS(getCategories(data.venues), mapping, this);
 
         this.selectedVenue = ko.observable(null);
+
+        this.hoveredVenue = ko.observable(null);
     }
 
     update(data) {
@@ -87,5 +89,13 @@ export default class ViewModel {
 
     isVenueSelected(venue) {
         return venue === this.selectedVenue();
+    }
+
+    hoverVenue(venue) {
+        this.hoveredVenue(venue);
+    }
+
+    isVenueHovered(venue) {
+        return venue === this.hoveredVenue();
     }
 }
