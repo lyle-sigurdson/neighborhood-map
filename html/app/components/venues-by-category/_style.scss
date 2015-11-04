@@ -1,5 +1,5 @@
 .c-venues-by-category {
-    height: 100%;
+    height: calc(100% - #{$c-search-filter-height} - 16px);
     overflow-y: scroll;
 }
 

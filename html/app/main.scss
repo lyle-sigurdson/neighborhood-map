@@ -27,8 +27,13 @@ $inuit-enable-layout--tiny: true;
 @import 'bower_components/inuit-list-bare/objects.list-bare';
 
 // Components
+// Height for search-filter component. Used in both the search-filter and
+// venues-by-category components.
+$c-search-filter-height: 66px;
+
 @import 'components/venues-list/style';
 @import 'components/venues-by-category/style';
+@import 'components/search-filter/style';
 
 // Trumps
 @import 'bower_components/inuit-widths/trumps.widths';

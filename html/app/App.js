@@ -9,6 +9,7 @@ import ViewModel from './ViewModel';
 import Preferences from './Preferences.js';
 import venuesList from './components/venues-list/main';
 import venuesByCategory from './components/venues-by-category/main';
+import searchFilter from './components/search-filter/main';
 import VenuesMap from './components/venues-map/main';
 import GeolocationDialog from './components/geolocation-dialog/main';
 
@@ -27,6 +28,7 @@ export default class {
 
         ko.components.register('venues-by-category', venuesByCategory);
         ko.components.register('venues-list', venuesList);
+        ko.components.register('search-filter', searchFilter);
 
         ko.applyBindings(this.viewModel);
     }
