@@ -35,10 +35,11 @@ export default class {
                 let latLngBounds = new mapsApi.LatLngBounds();
 
                 categories.forEach(category => {
-                    category.venues.forEach(venue => {
+                    category.venues.forEach((venue, i) => {
                         let marker = new mapsApi.Marker({
                             map: this.map,
                             position: venue.location,
+                            zIndex: i,
                             icon: {
                                 path: mapsApi.SymbolPath.CIRCLE,
                                 scale: 10,
@@ -87,12 +88,21 @@ export default class {
                 }
             });
 
+            this.viewModel.selectedVenue.subscribe(deselected => {
+                let deselectedMarker = markers.get(deselected);
+
+                if (deselectedMarker) {
+                    deselectedMarker.setZIndex(0);
+                }
+            }, this, 'beforeChange');
+
             this.viewModel.selectedVenue.subscribe(selected => {
                 this.infoWindow.close();
 
                 if (selected) {
                     this.infoWindow.setContent(infoWindowContent(selected));
                     this.infoWindow.open(this.map, markers.get(selected));
+                    markers.get(selected).setZIndex(markers.length);
                 }
             });
         });
