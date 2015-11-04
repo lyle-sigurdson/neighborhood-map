@@ -26,6 +26,10 @@ html, body {
     height: 100%;
 }
 
+body {
+    position: relative;
+}
+
 // Objects
 $inuit-enable-layout--tiny: true;
 @import 'bower_components/inuit-layout/objects.layout';
@@ -57,10 +61,6 @@ $c-search-filter-height: 66px;
 }
 
 // "Powered By Foursquare" attribution.
-html {
-    position: relative;
-}
-
 .foursquare-attribution {
     position: absolute;
     bottom: 10px;
