@@ -15,9 +15,14 @@
 @import 'bower_components/inuit-page/base.page';
 html {
     overflow-y: auto;
+    box-sizing: border-box;
 }
 
-html,body {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
     height: 100%;
 }
 
