@@ -65,11 +65,11 @@ export default class {
                         });
 
                         marker.addListener('mouseover', function () {
-                            that.viewModel.hoverVenue(venue);
+                            that.viewModel.hoverVenue({ venue: venue, hoverOrigin: that });
                         });
 
                         marker.addListener('mouseout', function () {
-                            that.viewModel.hoverVenue(null);
+                            that.viewModel.hoverVenue({ venue: null, hoverOrigin: that });
                         });
 
                         venue.visible.subscribe(visible => {
@@ -118,14 +118,20 @@ export default class {
             });
 
             this.viewModel.hoveredVenue.subscribe(unHovered => {
-                if (unHovered) {
-                    markers.get(unHovered).setAnimation(null);
+                if (unHovered && unHovered.venue) {
+                    let marker = markers.get(unHovered.venue);
+
+                    if (marker) {
+                        marker.setAnimation(null);
+                    }
                 }
             }, this, 'beforeChange');
 
             this.viewModel.hoveredVenue.subscribe(hovered => {
-                if (hovered && !this.viewModel.isVenueSelected(hovered)) {
-                    markers.get(hovered).setAnimation(mapsApi.Animation.BOUNCE);
+                if (hovered.venue && !this.viewModel.isVenueSelected(hovered.venue)) {
+                    if (hovered.hoverOrigin !== this) {
+                        markers.get(hovered.venue).setAnimation(mapsApi.Animation.BOUNCE);
+                    }
                 }
             });
         });
