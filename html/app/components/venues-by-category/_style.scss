@@ -1,38 +1,14 @@
-.c-venues-by-category, .c-venues-by-category__categories {
-    height: 100%;
-}
-
-.c-venues-by-category__categories {
-    margin: 0 .5em 0 .5em;
+.c-venues-by-category {
+    height: calc(100% - #{$c-search-filter-height} - 16px);
     overflow-y: scroll;
 }
 
 .c-venues-by-category__category {
+    padding: 5px 0 0 35px;
     border: 1px grey solid;
-    margin-bottom: .5em;
+    margin: .5em;
 }
 
-.c-venues-by-category__category__header {
-    white-space: nowrap;
-}
-
-.c-venues-by-category__category__header__icon {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.c-venues-by-category__category__header__icon__img {
-    vertical-align: middle;
-}
-
-.c-venues-by-category__category__header__title {
-    display: inline-block;
-    vertical-align: middle;
-    white-space: normal;
+.c-venues-by-category__category__title {
     font-weight: bold;
-}
-
-.c-venues-by-category__category__venues {
-    display: block;
-    margin-left: 38px;
 }

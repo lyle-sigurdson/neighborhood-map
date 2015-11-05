@@ -22,6 +22,11 @@ class Category {
         this.venues = spec.venues.map((venue) => {
             return new Venue(venue);
         });
+        this.visible = ko.computed(() => {
+            return this.venues.some(venue => {
+                return venue.visible();
+            });
+        });
     }
 }
 
@@ -70,6 +75,8 @@ export default class ViewModel {
         koMapping.fromJS(getCategories(data.venues), mapping, this);
 
         this.selectedVenue = ko.observable(null);
+
+        this.hoveredVenue = ko.observable({ venue: null, hoverOrigin: null });
     }
 
     update(data) {
@@ -82,5 +89,13 @@ export default class ViewModel {
 
     isVenueSelected(venue) {
         return venue === this.selectedVenue();
+    }
+
+    hoverVenue(e) {
+        this.hoveredVenue({ venue: e.venue, hoverOrigin: e.hoverOrigin });
+    }
+
+    isVenueHovered(venue) {
+        return venue === this.hoveredVenue().venue;
     }
 }

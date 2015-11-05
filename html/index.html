@@ -5,8 +5,12 @@
   <title></title>
 </head>
 <body>
+  <img class="foursquare-attribution" src="img/poweredby-one-color-cdf070cc7ae72b3f482cf2d075a74c8c.png" alt="Powered By Foursquare">
   <div class="layout layout--tiny u-full-height">
-    <venues-by-category params="categories: categories" class="layout__item u-1/5 u-full-height"></venues-by-category>
+    <div class="layout__item u-1/5 u-full-height">
+      <search-filter params="categories: categories"></search-filter>
+      <venues-by-category params="categories: categories"></venues-by-category>
+    </div>
     <div id="venues-map" class="layout__item u-just-under-4/5 u-full-height"></div>
   </div>
   <!-- build:js -->

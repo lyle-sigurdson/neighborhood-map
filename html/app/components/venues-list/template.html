@@ -2,7 +2,9 @@
   <li data-bind="text: name,
                  click: function () { $root.selectVenue.call($root, $data); },
                  clickBubble: false,
-                 css: { 'c-venues-list__venue-name--selected': $root.isVenueSelected.call($root, $data) }"
+                 css: { 'c-venues-list__venue-name--selected': $root.isVenueSelected.call($root, $data), 'c-venues-list__venue-name--hovered': $root.isVenueHovered.call($root, $data, null) },
+                 visible: visible,
+                 event: { mouseover: function () { $root.hoverVenue( { venue: $data, hoverOrigin: $component }); }, mouseout: function () { $root.hoverVenue({ venue: null, hoverOrigin: $component }); } }"
       class="c-venues-list__venue-name">
   </li>
 </ul>
