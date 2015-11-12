@@ -31,7 +31,7 @@ body {
 }
 
 // Objects
-$inuit-enable-layout--tiny: true;
+$inuit-enable-layout--flush: true;
 @import 'bower_components/inuit-layout/objects.layout';
 @import 'bower_components/inuit-list-bare/objects.list-bare';
 
@@ -50,14 +50,45 @@ $c-search-filter-height: 66px;
 
 // Needed for elements leading up the the google map; without this, the map will
 // not show.
-.u-full-height {
+.u-gmap-ancestor {
     height: 100%;
 }
 
-// Map wraps underneath the categories/venues list if I use .u-4\/5, so I have
-// to use this:
-.u-just-under-4\/5 {
-    width: 79%;
+// On "lap-and-up" screen sizes, map is too wide and therefore won't sit beside
+// the venues list/search field if I use width: 80%. Must use .u-just-under-4/5
+// which is just a little narrower.
+@include media-query(lap-and-up) {
+    .u-just-under-4\/5-lap-and-up {
+        width: 79% !important;
+    }
+}
+
+// On mobile (the default), the map is at the top (first), and the venues list
+// is at the bottom (second.) Reverse this on larger screen sizes
+// ("lap-and-up") so the venues list can be on the left (first) and the map can
+// be on the right (second.)
+.wrapper {
+    @include media-query(lap-and-up) {
+        direction: rtl;
+    }
+}
+
+// For the two major layout items:
+// - By default, set each major layout items' height to 50% so they stack
+//   vertically.
+// - For "lap-and-up":
+//    - Restore left-to-right direction so text aligns to the left. This is
+//      necessary because of the technique used to switch the order of the major
+//      layout items.
+//    - Set major layout items to full height so they are arranged beside each
+//      other.
+.venues-map, .venues-control {
+    height: 50%;
+
+    @include media-query(lap-and-up) {
+        height: 100%;
+        direction: ltr;
+    }
 }
 
 // "Powered By Foursquare" attribution.
