@@ -3,6 +3,7 @@
 
 var gulp = require('gulp'),
     del = require('del'),
+    fs = require('fs'),
     sass = require('gulp-sass'),
     htmlReplace = require('gulp-html-replace'),
     inlineSource = require('gulp-inline-source'),
@@ -11,6 +12,7 @@ var gulp = require('gulp'),
     cachebust = new Cachebust({ checksumLength: 16 }),
     gzip = require('gulp-gzip'),
     tar = require('gulp-tar'),
+    touch = require('touch'),
     runSeq = require('run-sequence'),
     jspm = require('jspm'),
     package_json = require('./package.json'),
@@ -65,8 +67,24 @@ gulp.task('tar', function () {
         .pipe(gulp.dest('./'));
 });
 
+gulp.task('touch', function (done) {
+    var now = Date.now();
+
+    fs.readdir(destDir, function (err, files) {
+        if (err) {
+            return done(err);
+        }
+
+        files.forEach(function (file) {
+            touch.sync(destDir + '/' + file, { time: now });
+        });
+    });
+
+    done();
+});
+
 gulp.task('default', function (done) {
-    runSeq('clean', 'sass', 'bundleSFX', 'cache-bust-resources', 'html', 'prune',
-        'gzip', 'tar', done
+    runSeq('clean', 'sass', 'bundleSFX', 'cache-bust-resources', 'html',
+        'prune', 'gzip', 'touch', 'tar', done
     );
 });
