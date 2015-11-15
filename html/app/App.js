@@ -1,9 +1,7 @@
-/*jshint browser: true */
+/*jshint browser: true, devel: true */
 import config from './app-config.json!';
 
 import ko from 'knockout';
-import humane from 'humane-js';
-//import {} from '../jspm_packages/github/wavded/humane-js@3.2.2/themes/original.css!';
 
 import ViewModel from './ViewModel';
 import Preferences from './Preferences.js';
@@ -12,10 +10,13 @@ import venuesByCategory from './components/venues-by-category/main';
 import searchFilter from './components/search-filter/main';
 import VenuesMap from './components/venues-map/main';
 import GeolocationDialog from './components/geolocation-dialog/main';
+import errorsContainer from './components/errors-container/main';
 
 import getVenues from './getVenues';
 import getIpinfo from './getIpinfo';
 import getCurrentPosition from './getCurrentPosition.js';
+
+import errors from './errors';
 
 import './main.css!';
 
@@ -29,6 +30,7 @@ export default class {
         ko.components.register('venues-by-category', venuesByCategory);
         ko.components.register('venues-list', venuesList);
         ko.components.register('search-filter', searchFilter);
+        ko.components.register('errors-container', errorsContainer);
 
         ko.applyBindings(this.viewModel);
     }
@@ -56,11 +58,7 @@ export default class {
                 if (useGeolocationApi === 'yes') {
                     // User has set a preference that instructs us to use
                     // geolocation services, but it is not available.
-                    humane.log(
-                        'Geolocation is not available; falling back to IP ' +
-                        'address-based geolocation.',
-                        { timeout: 10 * 1000, clickToClose: true }
-                    );
+                    this.viewModel.showError(errors.ERR_DEVICE_GEO_UNAVAILABLE);
                 }
                 positionTask = getIpinfo;
             }
@@ -70,10 +68,8 @@ export default class {
             return getVenues(results[0].loc).then(venues => {
                 this.viewModel.update(venues);
             }).catch(err => {
-                humane.log(
-                    'Cannot retrieve venue data. Error message was: ' + err,
-                    { timeout: 10 * 1000, clickToClose: true }
-                );
+                this.viewModel.show(errors.ERR_VENUE_DATA);
+                console.log(err);
             });
         });
     }
@@ -83,10 +79,8 @@ export default class {
             return getVenues(e).then(venues => {
                 this.viewModel.update(venues);
             }).catch(err => {
-                humane.log(
-                    'Cannot retrieve venue data. Error message was: ' + err,
-                    { timeout: 10 * 1000, clickToClose: true }
-                );
+                this.viewModel.show(errors.ERR_VENUE_DATA);
+                console.log(err);
             });
         });
 
@@ -104,10 +98,8 @@ export default class {
                 return getVenues(position.loc).then(venues => {
                     return this.viewModel.update(venues);
                 }).catch(err => {
-                    humane.log(
-                        'Cannot retrieve venue data. Error message was: ' + err,
-                        { timeout: 10 * 1000, clickToClose: true }
-                    );
+                    this.viewModel.show(errors.ERR_VENUE_DATA);
+                    console.log(err);
                 });
             });
         });

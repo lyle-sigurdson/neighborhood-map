@@ -77,6 +77,8 @@ export default class ViewModel {
         this.selectedVenue = ko.observable(null);
 
         this.hoveredVenue = ko.observable({ venue: null, hoverOrigin: null });
+
+        this.errors = ko.observableArray();
     }
 
     update(data) {
@@ -97,5 +99,13 @@ export default class ViewModel {
 
     isVenueHovered(venue) {
         return venue === this.hoveredVenue().venue;
+    }
+
+    showError(error) {
+        this.errors.push(error);
+    }
+
+    hideError(error) {
+        this.errors.splice(this.errors.indexOf(error), 1);
     }
 }
