@@ -12,6 +12,8 @@ export default class {
     }
 
     init() {
+        let that = this;
+
         return mapsApiLoader(config.googleApiKey)().then(mapsApi => {
             this.mapsApi = mapsApi;
             this.infoWindow = new this.mapsApi.InfoWindow();
@@ -28,11 +30,12 @@ export default class {
 
             let markers = new Map();
 
+            let latLngBounds = null;
+
             this.viewModel.categories.subscribe(categories => {
                 markers.forEach(marker => marker.setMap(null));
                 markers.clear();
-
-                let latLngBounds = new mapsApi.LatLngBounds();
+                latLngBounds = new mapsApi.LatLngBounds();
 
                 categories.forEach(category => {
                     category.venues.forEach((venue, i) => {
@@ -95,6 +98,18 @@ export default class {
                 if (categories.length) {
                     this.map.fitBounds(latLngBounds);
                 }
+            });
+
+            // Re-center the map when the viewport is resized. The docs say:
+            //     Developers should trigger this event on the map when the div
+            //     changes size: google.maps.event.trigger(map, 'resize')
+            // but doing this doesn't re-center the map.
+            // Also, the setTimeout is a hack, but it won't work if I run it
+            // without the delay.
+            window.addEventListener('resize', () => {
+                setTimeout(() => {
+                    that.map.fitBounds(latLngBounds);
+                }, 200);
             });
 
             this.viewModel.selectedVenue.subscribe(deselected => {

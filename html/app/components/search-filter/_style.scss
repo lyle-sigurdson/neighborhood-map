@@ -1,15 +1,16 @@
 search-filter {
     display: block;
+    padding: 8px;
     height: $c-search-filter-height;
 }
 
 .c-search-filter__label {
     display: block;
-    width: 80%;
     font-size: .9em;
-    margin: 8px 0 0 8px;
+    font-weight: bold;
 }
 
 .c-search-filter__input {
-    margin: 0 0 0 8px;
+    display: block;
+    width: 100%;
 }
