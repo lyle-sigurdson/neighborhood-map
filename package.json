@@ -17,6 +17,7 @@
     "gulp-inline-source": "^2.1.0",
     "gulp-jspm": "^0.4.1",
     "gulp-minify-html": "^1.0.4",
+    "gulp-sass": "^2.1.0",
     "jspm": "^0.16.11",
     "run-sequence": "^1.1.4"
   },

@@ -3,6 +3,7 @@
 
 var gulp = require('gulp'),
     del = require('del'),
+    sass = require('gulp-sass'),
     htmlReplace = require('gulp-html-replace'),
     inlineSource = require('gulp-inline-source'),
     minifyHtml = require('gulp-minify-html'),
@@ -46,6 +47,12 @@ gulp.task('html', function () {
         .pipe(gulp.dest(destDir));
 });
 
+gulp.task('sass', function () {
+    return gulp.src(srcDir + '/app/main.scss')
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(gulp.dest(srcDir + '/app'));
+});
+
 gulp.task('gzip', function () {
     return gulp.src(destDir + '/*')
         .pipe(gzip({ level: 9 }))
@@ -59,7 +66,7 @@ gulp.task('tar', function () {
 });
 
 gulp.task('default', function (done) {
-    runSeq('clean', 'bundleSFX', 'cache-bust-resources', 'html', 'prune',
+    runSeq('clean', 'sass', 'bundleSFX', 'cache-bust-resources', 'html', 'prune',
         'gzip', 'tar', done
     );
 });
