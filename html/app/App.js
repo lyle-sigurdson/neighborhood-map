@@ -64,7 +64,7 @@ export default class {
             return getVenues(results[0].loc).then(venues => {
                 this.viewModel.update(venues);
             }).catch(err => {
-                this.viewModel.show(errors.ERR_VENUE_DATA);
+                this.viewModel.showError(errors.ERR_VENUE_DATA);
                 console.log(err);
             });
         });
@@ -75,7 +75,7 @@ export default class {
             return getVenues(e).then(venues => {
                 this.viewModel.update(venues);
             }).catch(err => {
-                this.viewModel.show(errors.ERR_VENUE_DATA);
+                this.viewModel.showError(errors.ERR_VENUE_DATA);
                 console.log(err);
             });
         });
