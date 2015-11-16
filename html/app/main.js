@@ -7,7 +7,5 @@ import App from './App';
 
     app.init().then(() => {
         app.run();
-    }).catch(err => {
-        console.log('err ', err);
     });
 }());
