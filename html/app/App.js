@@ -10,7 +10,7 @@ import venuesByCategory from './components/venues-by-category/main';
 import searchFilter from './components/search-filter/main';
 import VenuesMap from './components/venues-map/main';
 import GeolocationDialog from './components/geolocation-dialog/main';
-import errorsContainer from './components/errors-container/main';
+import dialogContainer from './components/dialog-container/main';
 
 import getVenues from './getVenues';
 import getIpinfo from './getIpinfo';
@@ -30,7 +30,7 @@ export default class {
         ko.components.register('venues-by-category', venuesByCategory);
         ko.components.register('venues-list', venuesList);
         ko.components.register('search-filter', searchFilter);
-        ko.components.register('errors-container', errorsContainer);
+        ko.components.register('dialog-container', dialogContainer);
 
         ko.applyBindings(this.viewModel);
     }

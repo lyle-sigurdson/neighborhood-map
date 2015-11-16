@@ -1,0 +1,6 @@
+<div data-bind="foreach: errors" class="dialog-container">
+  <div data-bind="css: { 'dialog-container__error--warning': level === 'warning', 'dialog-container__error--critical': level === 'critical' }" class="dialog-container__error">
+    <p data-bind="text: message"></p>
+    <button data-bind="click: function () { $root.hideError($data); }" class="dialog-container__error__dismiss-button">Dismiss</button>
+  </div>
+</div>
