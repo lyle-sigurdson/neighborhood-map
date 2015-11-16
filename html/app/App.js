@@ -1,16 +1,13 @@
 /*jshint browser: true, devel: true */
-import config from './app-config.json!';
-
 import ko from 'knockout';
 
 import ViewModel from './ViewModel';
-import Preferences from './Preferences.js';
 import venuesList from './components/venues-list/main';
 import venuesByCategory from './components/venues-by-category/main';
 import searchFilter from './components/search-filter/main';
 import VenuesMap from './components/venues-map/main';
 import GeolocationDialog from './components/geolocation-dialog/main';
-import errorsContainer from './components/errors-container/main';
+import dialogContainer from './components/dialog-container/main';
 
 import getVenues from './getVenues';
 import getIpinfo from './getIpinfo';
@@ -22,7 +19,6 @@ import './main.css!';
 
 export default class {
     constructor() {
-        this.preferences = new Preferences('__NM__', config.defaultPreferences);
         this.viewModel = new ViewModel();
         this.geolocationDialog = new GeolocationDialog();
         this.venuesMap = new VenuesMap(this.viewModel);
@@ -30,13 +26,13 @@ export default class {
         ko.components.register('venues-by-category', venuesByCategory);
         ko.components.register('venues-list', venuesList);
         ko.components.register('search-filter', searchFilter);
-        ko.components.register('errors-container', errorsContainer);
+        ko.components.register('dialog-container', dialogContainer);
 
         ko.applyBindings(this.viewModel);
     }
 
     init() {
-        const useGeolocationApi = this.preferences.getItem('useGeolocationApi');
+        const useGeolocationApi = this.viewModel.useGeolocationApi();
 
         let positionTask = null;
 
@@ -48,7 +44,7 @@ export default class {
                     positionTask = getIpinfo;
                     this.geolocationDialog.show().then(result => {
                         this.geolocationDialog.hide();
-                        this.preferences.setItem('useGeolocationApi', result);
+                        this.viewModel.useGeolocationApi(result);
                     });
                 } else {
                     positionTask = getCurrentPosition;
@@ -84,10 +80,10 @@ export default class {
             });
         });
 
-        this.preferences.addEventListener('useGeolocationApi', e => {
+        this.viewModel.useGeolocationApi.subscribe(newValue => {
             let positionTask = null;
 
-            if (e.newValue === 'yes') {
+            if (newValue === 'yes') {
                 positionTask = getCurrentPosition;
             } else {
                 // 'newValue' is either 'no' or 'never'.

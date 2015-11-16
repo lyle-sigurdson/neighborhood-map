@@ -1,4 +1,4 @@
-.errors-container {
+.dialog-container {
     display: block;
 
     position: fixed;
@@ -12,7 +12,7 @@
     padding: 1em;
 }
 
-.errors-container__error {
+.dialog-container__dialog {
     padding: 10px 10px 1em 10px;
     margin-bottom: 1em;
     text-align: center;
@@ -22,19 +22,25 @@
     box-shadow: 1px 1px 3px 0px grey;
 }
 
-.errors-container__error--warning {
+.dialog-container__dialog--dialog {
+    color: green;
+    background: linear-gradient(180deg, yellow 0, yellow 10px, red 11px, red 100%);
+    border-color: slateblue;
+}
+
+.dialog-container__dialog--warning {
     color: #734c00;
     background: linear-gradient(180deg, #e09600 0, #e09600 10px, #fdf8ed 11px, #fdf8ed 100%);
     border-color: #e09600;
 }
 
-.errors-container__error--critical {
+.dialog-container__dialog--critical {
     color: #a51b00;
     background: linear-gradient(180deg, #cc2200 0, #cc2200 10px, #fcf4f2 11px, #fcf4f2 100%);
     border-color: #cc2200;
 }
 
-.errors-container__error__dismiss-button {
+.dialog-container__error__dismiss-button {
     display: block;
     margin: auto;
     border-radius: 5px;

@@ -43,7 +43,8 @@ $c-search-filter-height: 66px;
 @import 'components/venues-list/style';
 @import 'components/venues-by-category/style';
 @import 'components/search-filter/style';
-@import 'components/errors-container/style';
+@import 'components/geolocation-dialog/style';
+@import 'components/dialog-container/style';
 
 // Trumps
 @import 'bower_components/inuit-widths/trumps.widths';

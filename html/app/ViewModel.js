@@ -1,7 +1,14 @@
-/*jshint module: true */
+/*jshint module: true, browser: true */
 import ko from 'knockout';
 import koMapping from 'SteveSanderson/knockout.mapping';
 import assignCategoryColors from './assignCategoryColors';
+
+ko.extenders.localStorage = function (target, option) {
+    target.subscribe(function (newValue) {
+        window.localStorage.setItem(option.key, JSON.stringify(newValue));
+        return target;
+    });
+};
 
 class Venue {
     constructor(spec) {
@@ -79,6 +86,14 @@ export default class ViewModel {
         this.hoveredVenue = ko.observable({ venue: null, hoverOrigin: null });
 
         this.errors = ko.observableArray();
+
+        let fromLocalStorage = JSON.parse(
+            window.localStorage.getItem('useGeolocationApi')
+        );
+
+        this.useGeolocationApi = ko.observable(fromLocalStorage || 'no').extend(
+            { localStorage: { key: 'useGeolocationApi' }
+        });
     }
 
     update(data) {
