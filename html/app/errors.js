@@ -11,5 +11,18 @@ export default {
     ERR_VENUE_DATA: {
         message: 'Cannot retrieve venue data.',
         level: 'critical'
+    },
+    ERR_API_PROXY: {
+        message: 'API proxy error.',
+        level: 'critical'
+    },
+    ERR_DEVICE_GEO_PERMISSION_DENIED: {
+        message: 'Access to device geolocation denied.',
+        level: 'critical'
+    },
+    ERR_DEVICE_GEO_TIMEOUT: {
+        message: 'Device geolocation timed out.',
+        level: 'critical'
     }
+
 };
