@@ -21,10 +21,10 @@ System.config({
     "clean-css": "npm:clean-css@3.4.6",
     "core-js": "npm:core-js@1.2.1",
     "css": "github:systemjs/plugin-css@0.1.18",
+    "github/fetch": "github:github/fetch@0.10.1",
     "google-maps-api": "npm:google-maps-api@1.1.0",
     "json": "github:systemjs/plugin-json@0.1.0",
     "knockout": "github:knockout/knockout@3.3.0",
-    "radiosilence/xr": "github:radiosilence/xr@master",
     "text": "github:systemjs/plugin-text@0.0.2",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"

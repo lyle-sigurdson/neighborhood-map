@@ -1,15 +1,31 @@
-import xr from 'radiosilence/xr';
+import ghfetch from 'github/fetch';
 
 export default function () {
-    return xr.get('/ipinfo/').then(ipinfo => {
-        if (ipinfo.apiProxyError) {
-            throw new Error('getIpinfo: apiProxy: ' + JSON.stringify(ipinfo.apiProxyError));
+    return ghfetch.fetch('/ipinfo/').then(response => {
+        if (response.status === 200) {
+            return response.json();
         }
 
-        if (ipinfo.hasOwnProperty('bogon')) {
-            throw new Error(`ipinfo.io: bogon ${ipinfo.ip} ${ipinfo.hostname}`);
+        throw {
+            name: response.statusText,
+            message: `getIpinfo: ${response.status} ${response.statusText}`
+        };
+
+    }).then(json => {
+        if (json.apiProxyError) {
+            throw {
+                name: json.name,
+                message: `getIpinfo: ${json.message}`
+            };
         }
 
-        return ipinfo;
+        if (json.bogon) {
+            throw {
+                name: 'bogon',
+                message: `getIpinfo: ${json.message}`
+            };
+        }
+
+        return json;
     });
 }
