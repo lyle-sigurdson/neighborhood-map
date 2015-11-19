@@ -1,7 +1,8 @@
-import ghfetch from 'github/fetch';
+/*global fetch */
+import 'github/fetch';
 
 export default function () {
-    return ghfetch.fetch('/ipinfo/').then(response => {
+    return fetch('/ipinfo/').then(response => {
         if (response.status === 200) {
             return response.json();
         }
