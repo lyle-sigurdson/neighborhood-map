@@ -13,7 +13,7 @@ import getVenues from './getVenues';
 import getIpinfo from './getIpinfo';
 import getCurrentPosition from './getCurrentPosition.js';
 
-import errors from './errors';
+import handleErrors from './handleErrors.js';
 
 import './main.css!';
 
@@ -40,24 +40,20 @@ export default class {
             this.positionTask = getIpinfo;
         }
 
-        return Promise.all([ this.positionTask(), this.venuesMap.init() ]).then(results => {
-            return getVenues(results[0].loc).then(venues => {
-                this.viewModel.update(venues);
-            }).catch(err => {
-                this.viewModel.showError(errors.ERR_VENUE_DATA);
-                console.log(err);
-            });
-        });
+        return Promise.all([ this.positionTask(), this.venuesMap.init() ]).then(
+            results => {
+                return getVenues(results[0].loc).then(venues => {
+                    this.viewModel.update(venues);
+                }
+            );
+        }).catch(handleErrors.bind(this, this.viewModel));
     }
 
     run() {
         this.venuesMap.addEventListener('dragend', e => {
             return getVenues(e).then(venues => {
                 this.viewModel.update(venues);
-            }).catch(err => {
-                this.viewModel.showError(errors.ERR_VENUE_DATA);
-                console.log(err);
-            });
+            }).catch(handleErrors.bind(this, this.viewModel));
         });
 
         this.viewModel.useGeolocationApi.subscribe(newValue => {
@@ -71,11 +67,8 @@ export default class {
             this.positionTask().then(position => {
                 return getVenues(position.loc).then(venues => {
                     return this.viewModel.update(venues);
-                }).catch(err => {
-                    this.viewModel.show(errors.ERR_VENUE_DATA);
-                    console.log(err);
                 });
-            });
+            }).catch(handleErrors.bind(this, this.viewModel));
         });
 
         if (this.viewModel.useGeolocationApi() === 'no') {
