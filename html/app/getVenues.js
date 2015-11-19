@@ -1,11 +1,11 @@
-import ghfetch from 'github/fetch';
+/*global fetch */
 
 export default function (ll) {
     // Foursquare API version.
     const v = '20151008',
           query = `/foursquare-venues?ll=${ll}&v=${v}`;
 
-    return ghfetch.fetch(query).then(response => {
+    return fetch(query).then(response => {
         if (response.status === 200) {
             return response.json();
         }
