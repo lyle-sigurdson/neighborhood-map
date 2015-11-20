@@ -18,9 +18,15 @@ class ViewModel {
 
         this.searchString.subscribe(newValue => {
             this.params.categories().forEach(category => {
-                category.venues.forEach(venue => {
-                    venue.visible(caseInsensitiveSubstring(venue.name, newValue));
-                });
+                if (caseInsensitiveSubstring(category.pluralName, newValue)) {
+                    category.venues.forEach(venue => {
+                        venue.visible(true);
+                    });
+                } else {
+                    category.venues.forEach(venue => {
+                        venue.visible(caseInsensitiveSubstring(venue.name, newValue));
+                    });
+                }
             });
         });
 
