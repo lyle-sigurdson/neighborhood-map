@@ -4,7 +4,7 @@
                  clickBubble: false,
                  css: { 'c-venues-list__venue-name--selected': $root.isVenueSelected.call($root, $data), 'c-venues-list__venue-name--hovered': $root.isVenueHovered.call($root, $data, null) },
                  visible: visible,
-                 event: { mouseover: function () { $root.hoverVenue( { venue: $data, hoverOrigin: $component }); }, mouseout: function () { $root.hoverVenue({ venue: null, hoverOrigin: $component }); } }"
+                 event: { mouseover: function () { $root.hoverVenue( { venue: $data, hoverOrigin: $component }); }, mouseout: function () { $root.hoverVenue({ venue: null, hoverOrigin: $component }); }, keypress: function (data, e) { if (e.charCode === 32) { $root.isVenueSelected.call($root, $data) ? $root.selectVenue.call($root, null) : $root.selectVenue.call($root, $data); } else { return true; } } }"
       class="c-venues-list__venue-name" tabindex="1">
   </li>
 </ul>
