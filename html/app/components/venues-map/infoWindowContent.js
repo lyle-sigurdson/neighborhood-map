@@ -7,7 +7,7 @@ export default function (venue) {
           <ul class="list-bare">
             ${venue.location && venue.location.address ? `<li>${venue.location.address}</li>` : ''}
             ${venue.contact && venue.contact.formattedPhone ? `<li>${venue.contact.formattedPhone}</li>` : ''}
-            <li><img class="info-window-content__logo" src="img/foursquare-icon-50x50.png" alt="Facebook logo"> <a href="https://foursquare.com/v/${encodeURI(venue.name.replace('#', ''))}/${venue.id}?ref=${config.foursquareClientId}" target="_blank">${venue.name}</a></li>
+            <li><img class="info-window-content__logo" src="img/foursquare-icon-50x50.png" alt="Foursquare logo"> <a href="https://foursquare.com/v/${encodeURI(venue.name.replace('#', ''))}/${venue.id}?ref=${config.foursquareClientId}" target="_blank">${venue.name}</a></li>
             ${venue.contact && venue.contact.twitter ? `<li><img class="info-window-content__logo" src="img/TwitterLogo.png" alt="Twitter logo"> <a href="https://twitter.com/${venue.contact.twitter}" target="_blank">@${venue.contact.twitter}</a></li>` : ''}
             ${venue.contact && venue.contact.facebookName ? `<li><img class="info-window-content__logo" src="img/FB-f-Logo__blue_50.png" alt="Facebook logo"> <a href="https://facebook.com/${venue.contact.facebook}" target="_blank">${venue.contact.facebookName}</a></li>` : ''}
           </ul>
