@@ -1,4 +1,4 @@
-<div data-bind="click: function () { $root.selectVenue(null); }" class="c-venues-by-category">
+<div data-bind="click: function () { $root.selectVenue(null); }" class="c-venues-by-category" tabindex="1">
   <div data-bind="visible: !categories().length">No results</div>
   <ul data-bind="foreach: categories" class="c-venues-by-category__categories list-bare">
     <li data-bind="style: { background: 'url(' + icon.prefix + '32' + icon.suffix + ') no-repeat, linear-gradient(90deg, ' + color + ' 1px, ' + color + ' 32px, #FFF 33px, #FFF 100%)' }, visible: visible"

@@ -1,4 +1,5 @@
 /*global fetch */
+import 'github/fetch';
 
 export default function () {
     return fetch('/ipinfo/').then(response => {

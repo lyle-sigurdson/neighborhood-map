@@ -1,4 +1,5 @@
 /*global fetch */
+import 'github/fetch';
 
 export default function (ll) {
     // Foursquare API version.
