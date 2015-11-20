@@ -5,6 +5,6 @@
                  css: { 'c-venues-list__venue-name--selected': $root.isVenueSelected.call($root, $data), 'c-venues-list__venue-name--hovered': $root.isVenueHovered.call($root, $data, null) },
                  visible: visible,
                  event: { mouseover: function () { $root.hoverVenue( { venue: $data, hoverOrigin: $component }); }, mouseout: function () { $root.hoverVenue({ venue: null, hoverOrigin: $component }); } }"
-      class="c-venues-list__venue-name">
+      class="c-venues-list__venue-name" tabindex="1">
   </li>
 </ul>
