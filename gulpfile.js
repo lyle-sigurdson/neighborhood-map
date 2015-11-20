@@ -55,6 +55,11 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(srcDir + '/app'));
 });
 
+gulp.task('img', function () {
+    return gulp.src(srcDir + '/img/*.*')
+        .pipe(gulp.dest(destDir + '/img/'));
+});
+
 gulp.task('gzip', function () {
     return gulp.src(destDir + '/*')
         .pipe(gzip({ level: 9 }))
@@ -85,6 +90,6 @@ gulp.task('touch', function (done) {
 
 gulp.task('default', function (done) {
     runSeq('clean', 'sass', 'bundleSFX', 'cache-bust-resources', 'html',
-        'prune', 'gzip', 'touch', 'tar', done
+        'prune', 'gzip', 'touch', 'img', 'tar', done
     );
 });
