@@ -3,8 +3,11 @@
 
 var gulp = require('gulp'),
     del = require('del'),
+    exec = require('child_process').exec,
     fs = require('fs'),
     sass = require('gulp-sass'),
+    browserSync = require('browser-sync'),
+    proxyMiddleware = require('http-proxy-middleware'),
     htmlReplace = require('gulp-html-replace'),
     inlineSource = require('gulp-inline-source'),
     minifyHtml = require('gulp-minify-html'),
@@ -19,6 +22,55 @@ var gulp = require('gulp'),
     main = 'app/main.js',
     srcDir = 'html',
     destDir = package_json.name;
+
+gulp.task('serve', [ 'sass' ], function () {
+    var proxyOptions = {
+            target: 'http://localhost:9999'
+        },
+        ipinfoProxy = proxyMiddleware('/ipinfo', proxyOptions),
+        foursquareProxy = proxyMiddleware('/foursquare-venues', proxyOptions);
+
+    browserSync.init({
+        server: {
+            baseDir: srcDir,
+            middleware: [ ipinfoProxy, foursquareProxy ]
+        },
+        open: false
+    });
+
+    // I wanted to use ES2015 and inuitcss, which require jspm and Sass
+    // respectively. The problem is jspm and Sass integration seems to be a bit
+    // of a grey area at the moment especially if you want to use jspm's self
+    // executable bundle feature (SFX).
+    //
+    // So, what this watch is actually doing is watching for *.scss files and
+    // when one is changed, sass is run which in turn changes the CSS file all
+    // the Sass files compile to. The next watch below notices the css file has
+    // changed and reloads the browser.
+    //
+    // This is a bit of a hack because it uses "exec" and makes quite a few
+    // assumptions about the existence/location of files but it works.
+    gulp.watch([
+        srcDir + '/**/*.scss',
+        '!' + srcDir + '/jspm_packages/**/*',
+        '!' + srcDir + '/app/bower_components/**/*'
+    ]).on('change', function () {
+        exec(
+            'node_modules/.bin/node-sass html/app/main.scss > html/app/main.css',
+            function (err, stdout, stderr) {
+                if (err) {
+                    console.log(stderr);
+                }
+            }
+        );
+    });
+
+    gulp.watch([
+        srcDir + '/**/*.@(js|html|css|json)',
+        '!' + srcDir + '/jspm_packages/**/*',
+        '!' + srcDir + '/app/bower_components/**/*'
+   ]).on('change', browserSync.reload);
+});
 
 gulp.task('clean', function () {
     return del(destDir);
