@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     del = require('del'),
     exec = require('child_process').exec,
     fs = require('fs'),
+    os = require('os'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     proxyMiddleware = require('http-proxy-middleware'),
@@ -140,8 +141,18 @@ gulp.task('touch', function (done) {
     done();
 });
 
-gulp.task('default', function (done) {
+gulp.task('build', function (done) {
     runSeq('clean', 'sass', 'bundleSFX', 'cache-bust-resources', 'html',
         'prune', 'gzip', 'touch', 'img', 'tar', done
     );
+});
+
+gulp.task('default', function (done) {
+    console.log(os.EOL);
+    console.log('Usage: gulp [TASK]' + os.EOL);
+    console.log('Available Tasks:');
+    console.log('  serve: Serve site for local development');
+    console.log('  build: Bundle the site for deployment ');
+    console.log(os.EOL);
+    done();
 });
