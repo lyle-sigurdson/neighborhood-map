@@ -23,7 +23,8 @@ export default function () {
         if (json.bogon) {
             throw {
                 name: 'bogon',
-                message: `getIpinfo: ${json.message}`
+                message: `getIpinfo: ipinfo.io: ` +
+                         `bogon: ${json.ip} ${json.hostname}`
             };
         }
 
