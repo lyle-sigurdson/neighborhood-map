@@ -1,5 +1,9 @@
 import ko from 'knockout';
 
+/*
+ * Data and operations on the geolocation dialog.
+ */
+
 export default class {
     constructor() {
         this.visible = ko.observable(false);

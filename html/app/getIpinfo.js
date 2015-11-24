@@ -1,6 +1,12 @@
 /*global fetch */
 import 'github/fetch';
 
+/*
+    Return the information provided by the ipinfo.io service. No IP address is
+    included in the query; this results in the IP address of the client being
+    the query.
+*/
+
 export default function () {
     return fetch('/ipinfo/').then(response => {
         if (response.status === 200) {

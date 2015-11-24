@@ -18,27 +18,41 @@ export default class {
             this.mapsApi = mapsApi;
             this.infoWindow = new this.mapsApi.InfoWindow();
 
+            // Deselect the venue when its info window is closed. */
             mapsApi.event.addListener(this.infoWindow, 'closeclick', () => {
                 this.viewModel.selectVenue(null);
             });
 
+            // Initialize the google map; don't clear out the Foursquare
+            // attribution img element.
             this.map = new this.mapsApi.Map(
                 document.getElementById('venues-map'), { noClear: true }
             );
 
+            // Deslect venue when map is clicked on a spot that doesn't have a
+            // click handler.
             this.map.addListener('click', () => {
                 this.viewModel.selectVenue(null);
             });
 
+            // A map data structure to store references to venues and map
+            // markers; venue references are the keys, marker references are the
+            // values.
             let markers = new Map();
 
             let latLngBounds = null;
 
+            // Update the display of the map whenever the categories and venues
+            // within the categories are updated.
             this.viewModel.categories.subscribe(categories => {
+                // Clear out any previous markers.
                 markers.forEach(marker => marker.setMap(null));
                 markers.clear();
+
+                // Start with an empty bounds.
                 latLngBounds = new mapsApi.LatLngBounds();
 
+                // Create and set up map markers for the new categories/venues.
                 categories.forEach(category => {
                     category.venues.forEach((venue, i) => {
                         let marker = new mapsApi.Marker({
@@ -55,6 +69,8 @@ export default class {
                             }
                         });
 
+                        // Add click handlers to the map markers.
+                        //
                         // Must use an ES5 function literal here because google
                         // maps API binds the context of callbacks to the
                         // target (i.e., whatever was clicked.) This also means
@@ -78,6 +94,8 @@ export default class {
                             that.viewModel.hoverVenue({ venue: null, hoverOrigin: that });
                         });
 
+                        // Make marker react appropriately to changes in its
+                        // associated venue's visibility.
                         venue.visible.subscribe(visible => {
                             if (!visible && this.viewModel.isVenueSelected(venue)) {
                                 this.infoWindow.close();
@@ -91,6 +109,7 @@ export default class {
                             marker.setVisible(visible);
                         });
 
+                        // Extend the bounds with new marker.
                         latLngBounds.extend(marker.getPosition());
 
                         markers.set(venue, marker);
@@ -98,6 +117,7 @@ export default class {
                 });
 
                 if (categories.length) {
+                    // Reposition the map to show all the markers.
                     this.map.fitBounds(latLngBounds);
                 }
             });
@@ -114,6 +134,7 @@ export default class {
                 }, 200);
             });
 
+            // Set appearance and stack level of deselected map marker.
             this.viewModel.selectedVenue.subscribe(deselected => {
                 let deselectedMarker = markers.get(deselected);
 
@@ -125,7 +146,9 @@ export default class {
                 }
             }, this, 'beforeChange');
 
+            // Set appearance and stack level of selected map marker.
             this.viewModel.selectedVenue.subscribe(selected => {
+                // Make sure info window is only open once.
                 this.infoWindow.close();
 
                 let selectedMarker = markers.get(selected);
@@ -142,6 +165,7 @@ export default class {
                 }
             });
 
+            // Set appearance of marker when it becomes not hovered over.
             this.viewModel.hoveredVenue.subscribe(unHovered => {
                 if (unHovered && unHovered.venue) {
                     let unHoveredMarker = markers.get(unHovered.venue);
@@ -165,6 +189,7 @@ export default class {
                 }
             }, this, 'beforeChange');
 
+            // Set appearance of marker when it becomes hovered over.
             this.viewModel.hoveredVenue.subscribe(hovered => {
                 if (hovered.venue) {
                     let hoveredMarker = markers.get(hovered.venue);
@@ -189,6 +214,9 @@ export default class {
         });
     }
 
+    // Allow outside components to subscribe to map events with a callback. The
+    // callback's only argument is a string in the form:
+    //     <latitude>,<longitude>
     addEventListener(event, f) {
         this.map.addListener(event, () => {
             const center = this.map.getCenter(),

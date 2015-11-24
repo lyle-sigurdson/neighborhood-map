@@ -1,3 +1,6 @@
+/*
+ * Handle errors; intended to be used as an argument to Promise catches.
+ */
 export default function (viewModel, err) {
     if (err.code) {
         // This is an exception from the geolocation API. We can use the

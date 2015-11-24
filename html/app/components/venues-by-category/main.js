@@ -9,6 +9,8 @@ class ViewModel {
             'c-venues-by-category'
         );
 
+        // Scroll the venues by category list to the top with each new batch of
+        // categories/venues.
         this.categories.subscribe(() => {
             Array.prototype.forEach.call(element$, element => {
                 element.scrollTop = 0;

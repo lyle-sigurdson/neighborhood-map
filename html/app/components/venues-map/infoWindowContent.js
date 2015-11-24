@@ -1,5 +1,10 @@
 import config from 'app/app-config.json!';
 
+/*
+ * A function returning HTML suitable for info window content based on the
+ * 'venue' argument
+ */
+
 export default function (venue) {
     return `
         <div class="info-window-content">

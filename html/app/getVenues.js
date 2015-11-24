@@ -1,6 +1,12 @@
 /*global fetch */
 import 'github/fetch';
 
+/*
+ * Query the Foursquare API (via api-proxy) for venues near 'll'.
+ *
+ * 'll' is a string in the form "<latitude>,<longitude>".
+ */
+
 export default function (ll) {
     // Foursquare API version.
     const v = '20151008',

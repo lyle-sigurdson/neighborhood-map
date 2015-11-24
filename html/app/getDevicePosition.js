@@ -1,4 +1,6 @@
 /*jshint browser: true */
+
+/* Return a location using the geolocation API */
 export default function (options) {
     return new Promise((resolve, reject) => {
         if ('geolocation' in window.navigator) {

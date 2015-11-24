@@ -1,3 +1,10 @@
+/*
+ * Main sass file.
+ *
+ * @imports inuitcss files, .scss partials from the various components, and
+ * some higher level styling/layout.
+ */
+
 // Settings
 @import 'bower_components/inuit-defaults/settings.defaults';
 @import 'bower_components/inuit-responsive-settings/settings.responsive';
