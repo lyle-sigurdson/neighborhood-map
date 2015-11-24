@@ -11,7 +11,7 @@ import dialogContainer from './components/dialog-container/main';
 
 import getVenues from './getVenues';
 import getIpinfo from './getIpinfo';
-import getCurrentPosition from './getCurrentPosition.js';
+import getDevicePosition from './getDevicePosition.js';
 
 import handleErrors from './handleErrors.js';
 
@@ -34,7 +34,7 @@ export default class {
 
     init() {
         if (this.viewModel.useGeolocationApi() === 'yes') {
-            this.positionTask = getCurrentPosition;
+            this.positionTask = getDevicePosition;
         } else {
             // useGeolocationApi is either 'no' or 'never'
             this.positionTask = getIpinfo;
@@ -58,7 +58,7 @@ export default class {
 
         this.viewModel.useGeolocationApi.subscribe(newValue => {
             if (newValue === 'yes') {
-                this.positionTask = getCurrentPosition;
+                this.positionTask = getDevicePosition;
             } else {
                 // 'newValue' is either 'no' or 'never'.
                 this.positionTask = getIpinfo;
