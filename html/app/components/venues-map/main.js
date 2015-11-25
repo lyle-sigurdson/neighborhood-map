@@ -205,6 +205,10 @@ export default class {
                             { strokeColor: 'rgb(200, 200, 200)' }
                         ));
 
+                        // Bounce the marker only if it was hovered over on a
+                        // different component; that is, a component other than
+                        // the map because it's a bad user experience to have a
+                        // marker start bouncing when they go to click on it.
                         if (hovered.hoverOrigin !== this) {
                             hoveredMarker.setAnimation(mapsApi.Animation.BOUNCE);
                         }
@@ -220,6 +224,9 @@ export default class {
     addEventListener(event, f) {
         this.map.addListener(event, () => {
             const center = this.map.getCenter(),
+                  // In some circumstances, 'getCenter' will return invalid
+                  // coordinates. Wrap the coordinates from 'getCenter' to
+                  // ensure we're returning valid coordinates.
                   wrappedCenter = new this.mapsApi.LatLng(
                       center.lat(), center.lng()
                   );
