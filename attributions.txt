@@ -1,0 +1,21 @@
+- Knockout Documentation
+  http://knockoutjs.com/documentation/introduction.html
+
+- Google Maps Javascript API Documentation
+  https://developers.google.com/maps/documentation/javascript/
+
+- Exploring ES6
+  http://exploringjs.com/es6/
+
+- Guy Bedford: Package Management for ES6 Modules [JSConf2014]
+  https://www.youtube.com/watch?v=szJjsduHBQQ
+
+- Steve Sanderson - Architecting large Single Page Applications with Knockout.js
+  https://vimeo.com/97519516
+
+- map.getCenter.lng() extends beyond -180 when dragging continuously. How can I
+  stop that?
+  http://stackoverflow.com/questions/7680371
+
+- knockoutjs - bindings with parameters triggered on load
+  http://stackoverflow.com/questions/9891282
