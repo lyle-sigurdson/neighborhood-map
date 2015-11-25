@@ -6,6 +6,18 @@
 
 View online at [https://neighborhoodmap.xyz/](http://neighborhoodmap.xyz/)
 
+The idea is that you can explore your neighborhood's businesses, stores, and
+other attractions on a map.
+
+If the map seems like it's not showing an area close enough, choose "Yes" when
+prompted and (with your permission) the application will use a more accurate
+method of finding your position.
+
+Drag the map around to explore different areas; the map will move slightly and
+zoom to fit the nearby venues it finds.
+
+Click on a place to see more information about that place.
+
 ###View / develop locally
 
 The app has two components:
