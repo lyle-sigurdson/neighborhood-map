@@ -4,7 +4,7 @@
 
 ###View online
 
-View online at [https://neighborhoodmap.xyz/](http://neighborhoodmap.xyz/)
+View online at [https://neighborhoodmap.xyz:8443/](http://neighborhoodmap.xyz:8443/)
 
 The idea is that you can explore your neighborhood's businesses, stores, and
 other attractions on a map.
