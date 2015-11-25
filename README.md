@@ -42,7 +42,7 @@ locally.
 - An [ipinfo.io](http://ipinfo.io) API access key. Note: without an ipinfo.io
 access key, communication between api-proxy and ipinfo.io will not be encrypted.
 
-####api-proxy Setup
+####Back End (api-proxy) Setup
 
 Perform *one* of the following depending on whether or not you're using an
 ipinfo.io access key.
