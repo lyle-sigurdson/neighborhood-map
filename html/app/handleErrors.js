@@ -10,6 +10,9 @@ export default function (viewModel, err) {
             level: 'warning',
             message: `Geolocation not available (${err.message}).`
         });
+
+        // Fall back to ipinfo.io.
+        viewModel.useGeolocationApi('no');
     } else {
         // Something more serious happened and there's no fallback.
         viewModel.showError({
