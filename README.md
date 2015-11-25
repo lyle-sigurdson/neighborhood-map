@@ -58,7 +58,7 @@ for the last one.
 1. `git clone https://github.com/lyle-sigurdson/api-proxy.git`
 1. `cd api-proxy`
 1. `npm install`
-1. `API_PROXY_PORT=9999 FS_CLIENT_ID=\<client-id> FS_CLIENT_SECRET=\<client-secret> IPINFO_ACCESS_TOKEN=\<ipinfo-token> node index.js`
+1. `API_PROXY_PORT=9999 FS_CLIENT_ID=<client-id> FS_CLIENT_SECRET=<client-secret> IPINFO_ACCESS_TOKEN=<ipinfo-token> node index.js`
 
 #####*Without* an ipinfo.io access token
 
@@ -71,7 +71,7 @@ clear text.
 1. `git clone https://github.com/lyle-sigurdson/api-proxy.git`
 1. `cd api-proxy`
 1. `npm install`
-1. `API_PROXY_PORT=9999 FS_CLIENT_ID=\<client-id> FS_CLIENT_SECRET=\<client-secret> node index.js --insecure`
+1. `API_PROXY_PORT=9999 FS_CLIENT_ID=<client-id> FS_CLIENT_SECRET=<client-secret> node index.js --insecure`
 
 ####Client Setup
 
