@@ -37,41 +37,17 @@ locally.
 - npm and node
 - bower
 
-#####Optional
-
-- An [ipinfo.io](http://ipinfo.io) API access key. Note: without an ipinfo.io
-access key, communication between api-proxy and ipinfo.io will not be encrypted.
-
 ####Back End (api-proxy) Setup
 
-Perform *one* of the following depending on whether or not you're using an
-ipinfo.io access key.
-
-#####*With* an ipinfo.io access token
-
-Replace \<client-id>, \<client-secret>, and \<ipinfo-token> below with the
-credentials you've obtained from Foursquare for the first two and from ipinfo.io
-for the last one.
+Replace \<client-id> and \<client-secret> below with your Foursquare
+credentials.
 
 1. Change into a suitable directory to contain the api-proxy repository
    directory
 1. `git clone https://github.com/lyle-sigurdson/api-proxy.git`
 1. `cd api-proxy`
 1. `npm install`
-1. `API_PROXY_PORT=9999 FS_CLIENT_ID=<client-id> FS_CLIENT_SECRET=<client-secret> IPINFO_ACCESS_TOKEN=<ipinfo-token> node index.js`
-
-#####*Without* an ipinfo.io access token
-
-Replace \<client-id> and \<client-secret> with your Foursquare credentials. Note
-that with this method, communication between api-proxy and ipinfo.io will be in
-clear text.
-
-1. Change into a suitable directory to contain the api-proxy repository
-   directory
-1. `git clone https://github.com/lyle-sigurdson/api-proxy.git`
-1. `cd api-proxy`
-1. `npm install`
-1. `API_PROXY_PORT=9999 FS_CLIENT_ID=<client-id> FS_CLIENT_SECRET=<client-secret> node index.js --insecure`
+1. `API_PROXY_PORT=9999 FS_CLIENT_ID=<client-id> FS_CLIENT_SECRET=<client-secret> node index.js`
 
 ####Client Setup
 
