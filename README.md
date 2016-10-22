@@ -1,11 +1,5 @@
 #Neighborhood Map
 
-##Steps to run the app
-
-###View online
-
-View online at [https://neighborhoodmap.xyz:8443/](https://neighborhoodmap.xyz:8443/)
-
 The idea is that you can explore your neighborhood's businesses, stores, and
 other attractions on a map.
 
@@ -17,6 +11,8 @@ Drag the map around to explore different areas; the map will move slightly and
 zoom to fit the nearby venues it finds.
 
 Click on a place to see more information about that place.
+
+##Steps to run the app
 
 ###View / develop locally
 
